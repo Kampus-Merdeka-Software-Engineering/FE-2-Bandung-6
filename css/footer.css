@@ -75,6 +75,9 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+.row2 p {
+	text-align: center;
+}
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
