@@ -1,19 +1,19 @@
-.atas h1{
+.atas h1 {
   margin-left: 100px;
   margin-right: 100px;
 }
-.atas h5{
+.atas h5 {
   padding-right: 50px;
 }
-.container .location-container .logo h6{
+.container .location-container .logo h6 {
   width: 157px;
   height: 18px;
 }
-.location{
+.location {
   margin-top: 20px;
   padding: 25px;
 }
-.container{
+.container {
   margin: auto;
   max-width: 1170px;
 }
@@ -23,76 +23,75 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-
 }
-.container .location-container{
+.container .location-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
-.logo{
-display: flex;
-}
-.container .location-container .logo{
+.logo {
   display: flex;
-width: 16px;
-height: 16px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+}
+.container .location-container .logo {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 .container-6 {
-    display: flex;
-    flex-direction: column;
-    margin: 100px 0;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .services-heading p {
-    color: black;
-    font-size: 40px;
-  }
-  
-  .services-card {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 75%;
-  }
-  
-  .scard {
-    background: #FFF0F0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-  }
-  
-  .services-card > div {
-    display: flex;
-    margin: 30px 0;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height: 300px;
-    width: 250px;
-    border-radius: 20px;
-    transition: 400ms;
-  }
-  
-  .services-card .scard b.second-text {
-    font-size: 18px;
-    color: black !important;
-    font-weight: 600 !important;
-  }
-  
-  .services-card .scard p.third-text {
-    margin: 15px 20px;
-    font-size: 13px;
-  }
-  
-  .services-card .scard:hover {
-    transform: scale(1.1, 1.1);
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-heading p {
+  color: black;
+  font-size: 40px;
+}
+
+.services-card {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.scard {
+  background: #fff0f0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.services-card > div {
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+  transition: 400ms;
+}
+
+.services-card .scard b.second-text {
+  font-size: 18px;
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.services-card .scard p.third-text {
+  margin: 15px 20px;
+  font-size: 13px;
+}
+
+.services-card .scard:hover {
+  transform: scale(1.1, 1.1);
+}
