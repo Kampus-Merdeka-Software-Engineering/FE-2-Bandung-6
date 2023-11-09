@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pilih Metode Pembayaran</title>    
+</head>
+<body>
+    <h1>Pilih Metode Pembayaran</h1>
+    <h2>Bank (wajib pilih 1):</h2>
+    <form>
+        <input type="radio" id="bca" name="payment" value="bca">
+        <label for="BCA">BCA</label><br>
+        <input type="radio" id="mandiri" name="payment" value="mandiri">
+        <label for="Mandiri">Mandiri</label><br>
+        <input type="radio" id="bni" name="payment" value="bni">
+        <label for="BNI">BNI</label><br>
+        <input type="radio" id="cimb" name="payment" value="cimb">
+        <label for="BRI">CIMB Niaga</label><br>
+        <input type="radio" id="maybank" name="payment" value="maybank">
+        <label for="BSI">Maybank</label><br>
+    </form>
+    <br>
+    <h2>E-Wallet (wajib pilih 1):</h2>
+    <form>
+        <input type="radio" id="gopay" name="payment" value="gopay">
+        <label for="gopay">GoPay</label><br>
+        <input type="radio" id="ovo" name="payment" value="ovo">
+        <label for="ovo">OVO</label><br>
+        <input type="radio" id="dana" name="payment" value="dana">
+        <label for="dana">DANA</label><br>
+        <input type="radio" id="linkaja" name="payment" value="linkaja">
+        <label for="linkaja">LinkAja</label><br>
+        <input type="radio" id="shopeepay" name="payment" value="shopeepay">
+        <label for="shopeepay">ShopeePay</label><br>
+    </form>
+    <h2>Detail harga</h2>
+    <table>
+        <tr>
+            <td>Harga Tiket:</td>
+            <td><input type="text" name="harga_tiket" placeholder="Masukkan nominal"></td>
+        </tr>
+        <tr>
+            <td>Diskon:</td>
+            <td><input type="text" name="diskon" placeholder="Masukkan nominal"></td>
+        </tr>
+        <tr>
+            <td>Biaya Layanan:</td>
+            <td><input type="text" name="biaya_layanan" placeholder="Masukkan nominal"></td>
+        </tr>
+        <tr>
+            <td>Total Bayar:</td>
+            <td><input type="text" name="total_bayar" readonly></td>
+        </tr>
+    </table>
+    <label>
+        <input type="checkbox" name="agreement" required>
+        I have agreed to the rules, terms, and conditions
+    </label>    
+    <br><br><br>
+    <input type="submit" value="Bayar">
+    <br><br><br>
+    </button>
+  </body>
+</html>
