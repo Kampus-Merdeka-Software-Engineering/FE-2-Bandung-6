@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 4px 104px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
 }
 
 .logo {
@@ -34,7 +35,7 @@
 
 .nav-links a::after {
   display: block;
-  content: "";
+  content: '';
   border-bottom: solid 3px #ff6700;
   border-radius: 10px;
   transform: scaleX(0);
@@ -83,8 +84,28 @@
   background-color: #000;
   margin: 3px 0;
 }
+
+.btn-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-login {
+  display: flex;
+  height: 40px;
+  padding: 11px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--light-secondary-color-50, #F36326);
+}
+
 /* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) {
+
   /* Style for navbar mobile */
   .navbar {
     padding: 20px 10px;
