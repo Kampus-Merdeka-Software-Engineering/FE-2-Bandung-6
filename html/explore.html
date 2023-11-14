@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=He, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Header</title>
+    <link rel="stylesheet" type="text/css" href="/css/explore.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <div id="nav-placeholder"></div>
+   
+    <!-- navbar end -->
+      <div class="flex-jadwal">
+        <div class="bar">
+          <div class="bar-2">
+            <label for="location">Start Location</label>
+            <div class="dropdown">
+              <img src="/assets/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown')" class="dropbtn" />
+              <div id="myDropdown" class="dropdown-content">
+                <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown')">Jepara</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown')">Bandung</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown')">Jakarta</a>
+              </div>
+            </div>
+          </div>
+          <p id="selecteDropdown">Lokasi Awal</p>
+        </div>
+        <div class="bar">
+          <div class="bar-2">
+            <label for="location">End Location</label>
+            <div class="dropdown">
+              <img src="/assets/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown2')" class="dropbtn" />
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown2')">Jepara</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown2' )">Bandung</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown2')">Jakarta</a>
+              </div>
+            </div>
+          </div>
+          <p id="selecteDropdown2">Lokasi Akhir</p>
+        </div>
+        <div class="bar">
+          <div class="bar-2">
+            <label for="date">Date</label>
+            <div class="dropdown">
+              <img src="/assets/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown3')" class="dropbtn" />
+              <div id="myDropdown3" class="dropdown-content">
+                <a href="javascript:void(0);" onclick="selectdropdown('Jepara' , 'selecteDropdown3')">Jepara</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Bandung' , 'selecteDropdown3')">Bandung</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown3')">Jakarta</a>
+              </div>
+            </div>
+          </div>
+          <p id="selecteDropdown3">Waktu</p>
+        </div>
+        <div class="bar">
+          <div class="bar-2">
+            <label for="people">People</label>
+            <div class="dropdown">
+              <img src="/assets/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown4')" class="dropbtn" />
+              <div id="myDropdown4" class="dropdown-content">
+                <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown4')">Jepara</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown4')">Bandung</a>
+                <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown4')">Jakarta</a>
+              </div>
+            </div>
+          </div>
+          <p id="selecteDropdown4">Jumlah Orang</p>
+        </div>
+        <div class="bar">
+          <div class="button-explore">
+            <a href="" class="explore">Explore Now</a>
+          </div>
+        </div>
+      </div>
+      <div id="foot-placeholder"></div>
+    <!-- <div class="flex-jadwal-2">
+      <div class="image">
+        <img src="/assets/Group 478.png" alt="" />
+      </div>
+      <div class="nama-tempat">
+        <label for="" class="l1">Titik Awal</label>
+        <p class="p1">Bandung</p>
+        <label for="" class="l2">Titik Akhir</label>
+        <p class="p2">Jepara</p>
+      </div>
+      <div class="barr">
+        <p class="p3">08.00</p>
+        <p class="p4">Estimasi 4 jam</p>
+      </div>
+      <div class="barr">
+        <p class="p5">Kursi</p>
+        <p class="p6">Rentang Harga</p>
+        <a href="" class="buy-button">Buy Now</a>
+      </div> -->
+    <!-- </div> -->
+
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
