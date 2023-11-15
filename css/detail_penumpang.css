@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact-details {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  width: 45%;
+}
+
+.pessenger-data {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  width: 45%;
+}
+
+h2,
+input[type='checkbox'] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#pilih-kursi {
+  background-color: orange;
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/* FORM */
+form {
+  margin-top: 5px;
+}
+
+.form-row {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+.inputan {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-row .form-group input {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input-group2 {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+.input-group2 input {
+  margin-top: 5px;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* dropdown*/
