@@ -30,11 +30,9 @@ body {
   padding: 20px;
   width: 45%;
 }
-
-h2,
-input[type='checkbox'] {
-  display: inline-block;
-  vertical-align: middle;
+h2{
+  display: flex;
+  justify-content: center;
 }
 
 #pilih-kursi {
