@@ -70,6 +70,8 @@ function toggleMenu() {
   document.addEventListener('DOMContentLoaded', function () {
     loadHeader();
   });
+
+  // slide about us
   let slideIndex = 0;
     showSlides();
 
