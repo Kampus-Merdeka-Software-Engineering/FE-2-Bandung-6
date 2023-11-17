@@ -10,6 +10,7 @@
   height: 50px;
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .navbar .name-logo {
@@ -83,7 +84,6 @@ nav .navbar-extra {
     flex-direction: column;
     align-items: center;
     height: auto;
-    position: relative;
   }
   .navbar .name-logo {
     left: 20px;
