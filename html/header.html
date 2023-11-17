@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Start Navbar -->
-<nav class="navbar">
-    <div class="logo">
-    </div>
-    <ul class="nav-links">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">City</a></li>
-      <li><a href="#">Blogs</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-    <div class="hamburger">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </nav>
-  <!-- End Navbar -->
-  <script src="/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <title>Header</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="#" class="name-logo">LOGO</a>
+      </div>
+      <div class="navbar-nav">
+        <ul id="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">City</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+      <div id="menu-extra" class="navbar-extra">
+        <a href="" class="sign-up">SIGN UP</a>
+        <a href="" class="sign-in">SIGN IN</a>
+      </div>
+      <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+        <i class="ph ph-list"></i>
+      </div>
+    </nav>
+  </body>
 </html>

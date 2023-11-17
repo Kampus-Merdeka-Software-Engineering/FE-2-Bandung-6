@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Location</title>
+    <style>
+        body {
+            font-family: 'Goldplay', Arial, sans-serif;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3498db;
+            padding: 10px;
+        }
+
+        #left-dropdowns {
+            display: flex;
+        }
+
+        #right-dropdowns {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown {
+            margin: 0 10px;
+        }
+
+        #login-button {
+            background-color: #f1c40f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #title {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            background-color: orange;
+            padding: 10px;
+        }
+
+    .container{display: flex}
+        .peach-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffcc99;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .peach-box img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="header">
+        <div id="left-dropdowns">
+            <div class="dropdown">
+                <select>
+                    <option>Dropdown 1</option>
+                    <!-- Add options as needed -->
+                </select>
+            </div>
+            <div class="dropdown">
+                <select>
+                    <option>Dropdown 2</option>
+                    <!-- Add options as needed -->
+                </select>
+            </div>
+            <div class="dropdown">
+                <select>
+                    <option>Dropdown 3</option>
+                    <!-- Add options as needed -->
+                </select>
+            </div>
+        </div>
+        <div id="right-dropdowns">
+            <div class="dropdown">
+                <select>
+                    <option>Dropdown 4</option>
+                    <!-- Add options as needed -->
+                </select>
+            </div>
+            <div class="dropdown">
+                <select>
+                    <option>Dropdown 5</option>
+                    <!-- Add options as needed -->
+                </select>
+            </div>
+            <button id="login-button">Login</button>
+        </div>
+    </div>
+
+    <div id="title">
+        <h1>Website Title</h1>
+    </div>
+<div class="container">
+    <div class="peach-box">
+        <img src="image1.jpg" alt="Image 1">
+        <p>Box 1 Text</p>
+    </div>
+
+    <div class="peach-box">
+        <img src="image2.jpg" alt="Image 2">
+        <p>Box 2 Text</p>
+    </div>
+
+    <div class="peach-box">
+        <img src="image3.jpg" alt="Image 3">
+        <p>Box 3 Text</p>
+    </div>
+
+    <div class="peach-box">
+        <img src="image4.jpg" alt="Image 4">
+        <p>Box 4 Text</p>
+    </div>
+
+    <div class="peach-box">
+        <img src="image5.jpg" alt="Image 5">
+        <p>Box 5 Text</p>
+    </div>
+
+    <div class="peach-box">
+        <img src="image6.jpg" alt="Image 6">
+        <p>Box 6 Text</p>
+    </div></div>
 </body>
 </html>

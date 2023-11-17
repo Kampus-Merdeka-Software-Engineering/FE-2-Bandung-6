@@ -1,123 +1,157 @@
-/* Style for the navbar */
 .navbar {
-  background-color: #fff;
-  color: #051923;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 1.4rem 7%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+.navbar .name-logo {
+  display: flex;
+  align-items: center;
+  color: #062d3e;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 100px;
 }
 
-.nav-links {
-  list-style: none;
+.navbar .navbar-nav ul,
+.navbar .navbar-nav li {
+  float: left;
+  color: #062d3e;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 1rem;
+}
+nav .navbar-extra {
   display: flex;
 }
 
-.nav-links li {
-  margin-right: 40px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #051923;
-  font-weight: 400;
-}
-
-.nav-links a:hover {
-  color: #ff6700;
-}
-
-.nav-links a::after {
-  display: block;
-  content: "";
-  border-bottom: solid 3px #ff6700;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-  margin-top: 5px;
-}
-
-.nav-links a:hover:after {
-  transform: scaleX(1);
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  list-style: none;
-  top: 100%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  left: 0;
-  width: 250px;
-  padding: 8px;
-  border-radius: 6px;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
+.navbar .navbar-nav a {
+  display: flex;
+  color: #062d3e;
   padding: 10px;
+  text-decoration: none;
 }
 
-.hamburger {
+.navbar .navbar-nav li:hover a {
+  color: #ed5c01;
+}
+
+.navbar .navbar-nav li::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #ed5c01;
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav li:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+.menu-icon {
+  font-size: 28px;
   display: none;
-  flex-direction: column;
-  cursor: pointer;
 }
+.sign-in {
+  color: #ffff;
+  background-color: #ed5c01;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+}
+.sign-up {
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+}
+.show {
+  display: block;
+}
+/* Responsive */
 
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #000;
-  margin: 3px 0;
-}
-/* Medium devices (tablets, 768px and down) */
-@media (max-width: 768px) {
-  /* Style for navbar mobile */
+@media only screen and (max-width: 768px) {
   .navbar {
-    padding: 20px 10px;
-  }
-
-  .nav-links {
-    display: none;
     flex-direction: column;
-    text-align: left;
-    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+  .navbar .name-logo {
+    left: 20px;
     position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #fff;
-    transition: all 0.3s ease-in;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 24px 29px 0px;
+  }
+  .navbar .navbar-nav {
+    margin-top: 50px;
   }
 
-  .nav-links li {
-    margin-right: 0;
-    padding: 10px;
+  .navbar .navbar-nav ul,
+  .navbar .navbar-nav li {
+    align-items: center;
+    width: 108%;
+    flex-direction: column;
+    margin-top: 0px;
+    text-align: center; /* Menyusun menu di tengah pada layar kecil */
   }
 
-  .nav-links.active {
+  .navbar .navbar-nav,
+  .navbar-extra {
+    width: 100%; /* Pastikan lebar penuh pada layar kecil */
+  }
+
+  .navbar-extra {
+    /* Memberi jarak antara navbar-nav dan navbar-extra */
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-icon {
+    cursor: pointer;
     display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.4rem 5%;
   }
 
-  .dropdown-menu {
-    width: 100%;
-    z-index: 1;
+  .navbar .navbar-nav ul,
+  nav .navbar-extra {
+    display: none;
   }
 
-  .hamburger {
+  .navbar .navbar-nav ul.show,
+  .navbar-extra.show {
     display: flex;
+    flex-direction: column;
   }
+
+  nav .navbar-nav,
+  nav .navbar-extra {
+    transform: translateX(0); /* Mengembalikan posisi untuk tampilan menu-icon */
+  }
+  .navbar .navbar-nav li:hover a {
+    color: #ed5c01;
+  }
+  .navbar .navbar-nav li::after {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  nav .navbar-nav {
+    transform: translateX(-60px);
+  }
+  nav .navbar-extra {
+    transform: translateX(-50px);
+  }
+
 }
