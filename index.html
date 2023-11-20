@@ -6,7 +6,6 @@
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Travel</title>
 </head>
 <body>
@@ -14,6 +13,71 @@
       <section class="hero">
         <h1 class="left-text">akuu ingin menjadi seorang kapiten</h3>
         <h5 class="right-text">Sakura definitely has its commercial purposes, but its celebration has very strong ties with important memories for many Japanese people. It falls in line with the end.</h1>
+      </section>
+      <section>
+        <div class="flex-jadwal">
+          <div class="bar">
+            <div class="bar-2">
+              <label for="location">Start Location</label>
+              <div class="dropdown">
+                <img src="/image/icons/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown')" class="dropbtn" />
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown')">Jepara</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown')">Bandung</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown')">Jakarta</a>
+                </div>
+              </div>
+            </div>
+            <p id="selecteDropdown">Lokasi Awal</p>
+          </div>
+          <div class="bar">
+            <div class="bar-2">
+              <label for="location">End Location</label>
+              <div class="dropdown">
+                <img src="/image/icons/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown2')" class="dropbtn" />
+                <div id="myDropdown2" class="dropdown-content">
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown2')">Jepara</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown2' )">Bandung</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown2')">Jakarta</a>
+                </div>
+              </div>
+            </div>
+            <p id="selecteDropdown2">Lokasi Akhir</p>
+          </div>
+          <div class="bar">
+            <div class="bar-2">
+              <label for="date">Date</label>
+              <div class="dropdown">
+                <img src="/image/icons/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown3')" class="dropbtn" />
+                <div id="myDropdown3" class="dropdown-content">
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jepara' , 'selecteDropdown3')">Jepara</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Bandung' , 'selecteDropdown3')">Bandung</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown3')">Jakarta</a>
+                </div>
+              </div>
+            </div>
+            <p id="selecteDropdown3">Waktu</p>
+          </div>
+          <div class="bar">
+            <div class="bar-2">
+              <label for="people">People</label>
+              <div class="dropdown">
+                <img src="/image/icons/arrow-down-sign-to-navigate (1).png (1).png" alt="" onclick="toggleDropdown('myDropdown4')" class="dropbtn" />
+                <div id="myDropdown4" class="dropdown-content">
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown4')">Jepara</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown4')">Bandung</a>
+                  <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown4')">Jakarta</a>
+                </div>
+              </div>
+            </div>
+            <p id="selecteDropdown4">Jumlah Orang</p>
+          </div>
+          <div class="bar">
+            <div class="button-explore">
+              <a href="" class="explore">Explore Now</a>
+            </div>
+          </div>
+        </div>
       </section>
   
       <section class="tiga"> 
