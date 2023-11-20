@@ -127,6 +127,24 @@ dropdowns.forEach((dropdown) => {
     });
   }
 });
+// Fungsi untuk menampilkan popup
+function tampilkanPopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
+}
+
+// Fungsi untuk menutup popup
+function tutupPopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
+
+// Fungsi untuk mengarahkan ke halaman lain
+function arahkanKeHalaman() {
+  // Ganti URL dengan URL halaman yang diinginkan
+  window.location.href = '../html/payments.html';
+}
+
 
 // slide about us
 let slideIndex = 0;
