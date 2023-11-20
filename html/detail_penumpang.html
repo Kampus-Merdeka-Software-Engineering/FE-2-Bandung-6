@@ -193,7 +193,19 @@
           <div class="additional">
             <input type="checkbox" id="agree-terms" name="agree-terms" />
             <label for="agree-terms">I have agreed to the rules and terms and conditions</label>
-            <button type="button" id="pilih-kursi">Pilih Kursi</button>
+            <button type="button" onclick="tampilkanPopup()" class="pilih-kursi">Booking</button>
+
+            <!-- Popup -->
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                <span class="close" onclick="tutupPopup()">&times;</span>
+                <p>Apakah anda mau membayar sekarang ?</p>
+                <div class="button-popup">
+                  <button onclick="arahkanKeHalaman()">Bayar</button>
+                  <button onclick="tutupPopup()">Nanti</button>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </div>
