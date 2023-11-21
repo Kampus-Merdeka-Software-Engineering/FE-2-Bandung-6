@@ -4,59 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customer Testimonials</title>
-  <style>
-    /* Styling CSS di sini */
-    .container-7 {
-      display: flex;
-      flex-direction: column;
-      margin: 50px auto 10px auto;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .testimoni-heading p {
-      color: black;
-      font-size: 40px;
-    }
-
-    .carousel {
-      display: flex;
-      transition: opacity 0.5s ease-in-out; /* Ubah transform menjadi opacity */
-    }
-
-    .testimonial-card {
-      width: calc(100% / 3 - 20px); 
-      box-sizing: border-box;
-      padding: 20px;
-      text-align: center;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f9f9f9;
-      margin-right: 20px;
-    }
-
-    .dot-2 {
-      height: 8px;
-      width: 8px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      margin-right: 5px; /* Tambahkan margin-right agar dots terlihat rapi */
-    }
-
-    .active-2 {
-      background-color: #717171;
-    }
-
-    .testimonial-card img {
-      max-width: 100%;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <div class="image-background">
+    <div class="img1"></div>
+  </div>
+  <div class="flex-jadwal">
+    <div class="bar">
+      <div class="bar-2">
+        <label for="location">Start Location</label>
+        <div class="dropdown">
+          <img src="/image/icons/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown')" class="dropbtn" />
+          <div id="myDropdown" class="dropdown-content">
+            <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown')">Jepara</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown')">Bandung</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown')">Jakarta</a>
+          </div>
+        </div>
+      </div>
+      <p id="selecteDropdown">Lokasi Awal</p>
+    </div>
+    <div class="bar">
+      <div class="bar-2">
+        <label for="location">End Location</label>
+        <div class="dropdown">
+          <img src="/image/icons/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown2')" class="dropbtn" />
+          <div id="myDropdown2" class="dropdown-content">
+            <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown2')">Jepara</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown2' )">Bandung</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown2')">Jakarta</a>
+          </div>
+        </div>
+      </div>
+      <p id="selecteDropdown2">Lokasi Akhir</p>
+    </div>
+    <div class="bar">
+      <div class="bar-2">
+        <label for="date">Date</label>
+        <div class="dropdown">
+          <img src="/image/icons/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown3')" class="dropbtn" />
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="javascript:void(0);" onclick="selectdropdown('Jepara' , 'selecteDropdown3')">Jepara</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Bandung' , 'selecteDropdown3')">Bandung</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown3')">Jakarta</a>
+          </div>
+        </div>
+      </div>
+      <p id="selecteDropdown3">Waktu</p>
+    </div>
+    <div class="bar">
+      <div class="bar-2">
+        <label for="people">People</label>
+        <div class="dropdown">
+          <img src="/image/icons/arrow-down-sign-to-navigate (1).png" alt="" onclick="toggleDropdown('myDropdown4')" class="dropbtn" />
+          <div id="myDropdown4" class="dropdown-content">
+            <a href="javascript:void(0);" onclick="selectdropdown('Jepara', 'selecteDropdown4')">Jepara</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Bandung', 'selecteDropdown4')">Bandung</a>
+            <a href="javascript:void(0);" onclick="selectdropdown('Jakarta', 'selecteDropdown4')">Jakarta</a>
+          </div>
+        </div>
+      </div>
+      <p id="selecteDropdown4">Jumlah Orang</p>
+    </div>
+    <div class="bar">
+      <div class="button-explore">
+        <a href="" class="explore">Explore Now</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="testimoni">
   <div class="container-7">
@@ -99,46 +116,15 @@
     </div>
     <br>
     <div style="text-align:center">
-      <span class="dot-2" onclick="currentSlide(1)"></span>
-      <span class="dot-2" onclick="currentSlide(2)"></span>
+      <span class="dot-2" ></span>
+      <span class="dot-2" ></span>
     </div>
   </div>
 </section>
 
-<script>
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    let i;
-    const slides = document.getElementsByClassName('carousel');
-    const dots = document.getElementsByClassName('dot-2');
-    
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
-    }
-
-    slideIndex++;
-    
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(' active-2', '');
-    }
-
-    slides[slideIndex - 1].style.display = 'flex';
-    dots[slideIndex - 1].className += ' active-2';
-    
-    setTimeout(showSlides, 2000); // Ganti angka 2000 dengan interval yang diinginkan (dalam milidetik)
-  }
-
-  // Fungsi untuk menavigasi langsung ke slide tertentu saat dot diklik
-  function currentSlide(index) {
-    slideIndex = index;
-    showSlides();
-  }
+<script src="../js/script.js">
+  
+  
 </script>
 
 </body>
