@@ -170,38 +170,61 @@ function setupSlides() {
 document.addEventListener('DOMContentLoaded', function () {
   setupSlides();
 });
-let slideIndexs = 0;
-showSlidess();
 
-function showSlidess() {
-  let i;
-  const slides = document.getElementsByClassName('carousel');
-  const dots = document.getElementsByClassName('dot-2');
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-
-  slideIndexs++;
-
-  if (slideIndexs > slides.length) {
-    slideIndexs = 1;
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active-2', '');
-  }
-
-  slides[slideIndexs - 1].style.display = 'flex';
-  dots[slideIndexs - 1].className += ' active-2';
-
-  setTimeout(showSlidess, 2000); // Ganti angka 2000 dengan interval yang diinginkan (dalam milidetik)
-}
-
-// Fungsi untuk menavigasi langsung ke slide tertentu saat dot diklik
-function currentSlide(index) {
-  slideIndexs = index;
+function startSlideshow() {
+  let slideIndexs = 0;
   showSlidess();
+
+  function showSlidess() {
+    let i;
+    const slides = document.getElementsByClassName('carousel');
+    const dots = document.getElementsByClassName('dot-2');
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+
+    slideIndexs++;
+
+    if (slideIndexs > slides.length) {
+      slideIndexs = 1;
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active-2', '');
+    }
+
+    slides[slideIndexs - 1].style.display = 'flex';
+    dots[slideIndexs - 1].className += ' active-2';
+
+    setTimeout(showSlidess, 2000); // Ganti angka 2000 dengan interval yang diinginkan (dalam milidetik)
+  }
+
+  // Fungsi untuk menavigasi langsung ke slide tertentu saat dot diklik
+  function navigateToSlide(index) {
+    slideIndexs = index;
+    showSlidess();
+  }
+
+  return {
+    start: showSlidess,
+    navigateTo: navigateToSlide,
+  };
 }
 
+// Panggil fungsi ini untuk memulai slideshow
+document.addEventListener('DOMContentLoaded', function () {
+  startSlideshow();
+});
+const pswrdField = document.querySelector(".form input[type='password']"),
+  toggleIcon = document.querySelector('.form .field i');
 
+toggleIcon.onclick = () => {
+  if (pswrdField.type === 'password') {
+    pswrdField.type = 'text';
+    toggleIcon.classList.remove('active');
+  } else {
+    pswrdField.type = 'password';
+    toggleIcon.classList.add('active');
+  }
+};
