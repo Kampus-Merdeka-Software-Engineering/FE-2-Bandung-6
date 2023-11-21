@@ -1,7 +1,7 @@
 // Header
 function toggleMenu() {
-  var menuList = document.getElementById('menu-list');
-  var menuExtra = document.getElementById('menu-extra');
+  const menuList = document.getElementById('menu-list');
+  const menuExtra = document.getElementById('menu-extra');
 
   menuList.classList.toggle('show');
   menuExtra.classList.toggle('show');
@@ -9,15 +9,15 @@ function toggleMenu() {
 /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
 function toggleDropdown(dropdownId) {
-  var dropdown = document.getElementById(dropdownId);
+  const dropdown = document.getElementById(dropdownId);
 
   // Ambil daftar semua dropdown yang ada
-  var allDropdowns = ['myDropdown', 'myDropdown2', 'myDropdown3', 'myDropdown4'];
+  const allDropdowns = ['myDropdown', 'myDropdown2', 'myDropdown3', 'myDropdown4'];
 
   // Sembunyikan dropdown lainnya jika terbuka
   allDropdowns.forEach(function (otherId) {
     if (otherId !== dropdownId) {
-      var otherDropdown = document.getElementById(otherId);
+      const otherDropdown = document.getElementById(otherId);
       if (otherDropdown.classList.contains('show')) {
         otherDropdown.classList.remove('show');
       }
@@ -28,11 +28,11 @@ function toggleDropdown(dropdownId) {
   dropdown.classList.toggle('show');
 }
 function selectdropdown(answer, elementId) {
-  var selectedElement = document.getElementById(elementId);
+  const selectedElement = document.getElementById(elementId);
   selectedElement.textContent = answer;
 }
 function loadFooter() {
-  var xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       document.getElementById('foot-placeholder').innerHTML = xhr.responseText;
@@ -42,7 +42,7 @@ function loadFooter() {
   xhr.send();
 }
 function loadHeader() {
-  var xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       document.getElementById('nav-placeholder').innerHTML = xhr.responseText;
@@ -54,10 +54,10 @@ function loadHeader() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName('dropdown-content');
-    var i;
+    const dropdowns = document.getElementsByClassName('dropdown-content');
+    let i;
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+      const openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -71,17 +71,17 @@ document.addEventListener('DOMContentLoaded', function () {
   loadHeader();
 });
 document.addEventListener('DOMContentLoaded', function () {
-  var phoneInput = document.getElementById('phone');
-  var awalanDitambahkan = false;
+  const phoneInput = document.getElementById('phone');
+  let awalanDitambahkan = false;
 
   // Tambahkan event listener untuk mendeteksi perubahan nilai pada input nomor telepon
   phoneInput.addEventListener('input', function () {
     if (!awalanDitambahkan) {
       // Dapatkan nilai nomor telepon
-      var phoneNumber = phoneInput.value;
+      const phoneNumber = phoneInput.value;
 
       // Format nomor telepon dengan awalan +62
-      var formattedPhoneNumber = '+62' + phoneNumber;
+      const formattedPhoneNumber = '+62' + phoneNumber;
 
       // Atur nilai input nomor telepon
       phoneInput.value = formattedPhoneNumber;
@@ -92,50 +92,47 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 //Dropdown detail_penumpang
-let dropdowns = document.querySelectorAll('.dropdown');
+function setupDropdowns() {
+  let dropdowns = document.querySelectorAll('.dropdown');
 
-dropdowns.forEach((dropdown) => {
-  let input = dropdown.querySelector('.input-box');
-  input.onclick = function () {
-    this.classList.toggle('open');
-    let list = this.nextElementSibling;
-    if (list.style.maxHeight) {
-      list.style.maxHeight = null;
-      list.style.boxShadow = null;
-    } else {
-      list.style.maxHeight = list.scrollHeight + 'px';
-      list.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)';
-    }
-  };
+  dropdowns.forEach((dropdown) => {
+    let input = dropdown.querySelector('.input-box');
+    input.onclick = function () {
+      this.classList.toggle('open');
+      let list = this.nextElementSibling;
+      if (list.style.maxHeight) {
+        list.style.maxHeight = null;
+        list.style.boxShadow = null;
+      } else {
+        list.style.maxHeight = list.scrollHeight + 'px';
+        list.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 1px rgba(0, 0, 0, 0.1)';
+      }
+    };
 
-  let rad = dropdown.querySelectorAll('.radio');
-  rad.forEach((item) => {
-    item.addEventListener('change', () => {
-      input.innerHTML = item.nextElementSibling.innerHTML;
-      input.click();
+    let rad = dropdown.querySelectorAll('.radio');
+    rad.forEach((item) => {
+      item.addEventListener('change', () => {
+        input.innerHTML = item.nextElementSibling.innerHTML;
+        input.click();
+      });
     });
   });
+}
 
-  let label = dropdown.querySelectorAll('label');
-  function labels() {
-    label.forEach((item) => {
-      let checkVal = item.querySelector('.name').innerHTML;
-      checkVal = checkVal.toUpperCase();
-      item.style.display = 'flex';
-      let list = input.nextElementSibling;
-      list.style.maxHeight = list.scrollHeight + 'px';
-    });
-  }
+// Panggil fungsi setupDropdowns pada saat dokumen telah dimuat
+document.addEventListener('DOMContentLoaded', function () {
+  setupDropdowns();
 });
+
 // Fungsi untuk menampilkan popup
 function tampilkanPopup() {
-  var popup = document.getElementById('popup');
+  const popup = document.getElementById('popup');
   popup.style.display = 'block';
 }
 
 // Fungsi untuk menutup popup
 function tutupPopup() {
-  var popup = document.getElementById('popup');
+  const popup = document.getElementById('popup');
   popup.style.display = 'none';
 }
 
@@ -144,28 +141,67 @@ function arahkanKeHalaman() {
   // Ganti URL dengan URL halaman yang diinginkan
   window.location.href = '../html/payments.html';
 }
-
-
 //slide about us
-let slideIndex = 0;
-showSlides();
+function setupSlides() {
+  let slideIndex = 0;
+  showSlides();
 
-function showSlides() {
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName('mySlides');
+    const dots = document.getElementsByClassName('dot');
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+    slides[slideIndex - 1].style.display = 'flex';
+    dots[slideIndex - 1].className += ' active';
+    setTimeout(showSlides, 2000);
+  }
+}
+
+// Panggil fungsi setupSlides pada saat dokumen telah dimuat
+document.addEventListener('DOMContentLoaded', function () {
+  setupSlides();
+});
+let slideIndexs = 0;
+showSlidess();
+
+function showSlidess() {
   let i;
-  const slides = document.getElementsByClassName('mySlides');
-  const dots = document.getElementsByClassName('dot');
+  const slides = document.getElementsByClassName('carousel');
+  const dots = document.getElementsByClassName('dot-2');
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+
+  slideIndexs++;
+
+  if (slideIndexs > slides.length) {
+    slideIndexs = 1;
   }
+
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
+    dots[i].className = dots[i].className.replace(' active-2', '');
   }
-  slides[slideIndex - 1].style.display = 'flex';
-  dots[slideIndex - 1].className += ' active';
-  setTimeout(showSlides, 2000);
+
+  slides[slideIndexs - 1].style.display = 'flex';
+  dots[slideIndexs - 1].className += ' active-2';
+
+  setTimeout(showSlidess, 2000); // Ganti angka 2000 dengan interval yang diinginkan (dalam milidetik)
 }
+
+// Fungsi untuk menavigasi langsung ke slide tertentu saat dot diklik
+function currentSlide(index) {
+  slideIndexs = index;
+  showSlidess();
+}
+
 
