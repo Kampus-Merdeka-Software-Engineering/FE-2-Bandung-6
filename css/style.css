@@ -17,7 +17,7 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
-
+/* tagline atas */
 .hero{
   margin-top: 100px;
   display: flex;
@@ -53,6 +53,7 @@ body {
   padding-right: 50px;
 
 }
+/* destination dan mengapa jelajah jatim */
 .container .location-container .logo h6{
   width: 157px;
   height: 18px;
@@ -91,7 +92,7 @@ body {
 
 .btn-destination{
   display: flex;
-  width: 300px;
+  width: 365px;
   height: 56px;
   padding: 18px 24px;
   justify-content: center;
@@ -102,7 +103,6 @@ body {
   color: var(--light-secondary-color-50, #F36326);
 }
 
-/* mengapa jelajah jatim */
 .container-6 {
     display: flex;
     flex-direction: column;
@@ -118,13 +118,13 @@ body {
   
   .destination-card{
     display: flex;
-    height: 400px;
+    height: 330px;
     padding: 5px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     border-radius: 12px;
-    border: 1px solid var(--light-separators-colors-primary, #E1E1FB);
+    border: 3px solid var(--light-separators-colors-primary, #E1E1FB);
     background: var(--light-base-color-white, #FFF);
   }
 
@@ -200,4 +200,243 @@ body {
   a {
     text-decoration: none;
   }
+
+  /* dropdown */
+  .flex-jadwal {
+    margin-top: 200px;
+    box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+    margin-left: 140px;
+    margin-right: 140px;
+    align-items: center;
+    margin-bottom: 300px;
+    display: flex;
+  }
+  /* FLEXBOX JADWAL */
+  .flex-jadwal > .bar {
+    padding: 40px;
+    margin: 0px 15px 0px 15px;
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    height: 30px;
+  }
+  .bar p {
+    margin-top: 5px;
+    color: #9a9ab0;
+  }
+  .button-explore {
+    display: flex;
+    position: absolute;
+  }
+  .explore {
+    color: #f36326;
+    background-color: #fcdccf;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+  }
+  .explore:hover {
+    color: #ffff;
+    background-color: #ed5c01;
+  }
+  /* FLEX JADWAL 2 */
+  .flex-jadwal-2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+    width: 1400px;
+    display: flex;
+  }
+  .flex-jadwal-2 > .barr {
+    padding: 40px;
+    margin: 0px 0px 0px 450px;
+    color: #000;
+    font-size: 16px;
+    height: 70px;
+    text-align: center;
+  }
+  .flex-jadwal-2 .image {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .p1 {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .p2 {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .l1 {
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #9a9ab0;
+  }
+  .l2 {
+    display: block;
+    font-size: 12px;
+    margin-top: 40px;
+    margin-left: 10px;
+    color: #9a9ab0;
+  }
+  .p3 {
+    margin-top: -20px;
+    font-weight: 600;
+  }
+  .p4 {
+    display: block;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 20px;
+  }
+  .p5 {
+    margin-top: -20px;
+  }
+  .p6 {
+    margin-top: 10px;
+  }
+  .buy-button {
+    display: block;
+    margin-top: 20px;
+    color: #f36326;
+    background-color: #fcdccf;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+  }
+  .buy-button:hover {
+    color: #ffff;
+    background-color: #ed5c01;
+  }
+  /* Dropdown */
+  .dropbtn {
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    background-color: #fcdccf;
+    color: #f36326;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  /* testimoni */
+  .container-7 {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 10px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimoni-heading p {
+    color: black;
+    font-size: 40px;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: opacity 0.5s ease-in-out; /* Ubah transform menjadi opacity */
+  }
+  
+  .testimonial-card {
+    width: calc(100% / 3 - 20px); 
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-right: 20px;
+  }
+  
+  .dot-2 {
+    height: 8px;
+    width: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-right: 5px; /* Tambahkan margin-right agar dots terlihat rapi */
+  }
+  
+  .active-2 {
+    background-color: #717171;
+  }
+  
+  .testimonial-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 970px) {
+    .flex-jadwal {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    .bar p {
+      margin-top: 5px;
+      color: #9a9ab0;
+    }
+    .button-explore {
+      margin-left: 0px;
+      position: relative;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .flex-jadwal > .bar {
+      margin-left: 10px;
+      margin: 0px 0px 0px 0px;
+    }
+    .flex-jadwal {
+      width: auto;
+      margin-left: 20px;
+      
+    }
+  }
+  
+  @media only screen and (max-width: 1350px) {
+    .flex-jadwal {
+      width: auto;
+      margin-left: 20px;
+      margin-right: 50px;
+      
+    }
+  }
+  
   
