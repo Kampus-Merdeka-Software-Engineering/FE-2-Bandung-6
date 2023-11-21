@@ -100,12 +100,13 @@ body {
 .container-6 {
   display: flex;
   flex-direction: column;
-  margin: 100px 0;
   justify-content: center;
   align-items: center;
 }
 
 .services-heading p {
+  margin-top: 20px;
+  margin-bottom: 30px;
   color: black;
   font-size: 40px;
 }
@@ -195,13 +196,15 @@ a {
 }
 
 /* dropdown */
-.image-background{
+.image-background {
+  background: url(../image/why/Hello.jpg) no-repeat center;
   z-index: 1;
-  background-color: #6c757d;
   margin-top: 100px;
   height: 400px;
- 
+  background-size: cover;
+  margin-left: 20px;
 }
+
 .flex-jadwal {
   background-color: #fff;
   z-index: 200;
@@ -210,7 +213,7 @@ a {
   margin-left: 140px;
   margin-right: 140px;
   align-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   display: flex;
 }
 /* FLEXBOX JADWAL */
@@ -362,6 +365,7 @@ a {
   align-items: center;
 }
 .testimoni-heading p {
+  margin-bottom: 20px;
   color: black;
   font-size: 40px;
 }
