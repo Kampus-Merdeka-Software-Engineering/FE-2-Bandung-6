@@ -8,66 +8,60 @@ body {
   padding: 0;
 }
 
-
-.grid{
+.grid {
   display: grid;
 }
 
-.grid-cols-3{
+.grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 /* tagline atas */
-.hero{
-  margin-top: 100px;
+.hero {
+  margin-top: 120px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 60x;
 }
 
-.hero .left-text{
-  color: var(--light-text-color-title, #11142D);
-  font-size: 62px;
-  font-weight: 700;
-  line-height: 120%; 
+.hero .left-text {
+  color: var(--light-text-color-title, #ed5c01);
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 120%;
   letter-spacing: 0.186px;
-  width: 60%;
+  width: 50%;
+  margin-left: 20px;
 }
 
-.hero .right-text{
-  color: var(--light-text-color-body-1, #515151);
-  font-size: 16px;
+.hero .right-text {
+  color: var(--light-text-color-body-1, #787676);
+  font-size: 20px;
+  line-height: 130%;
   font-weight: 400;
-  line-height: 125%; 
-  letter-spacing: 0.08px;
   width: 40%;
 }
 
-.atas h1{
+.atas h1 {
   margin-left: 100px;
   margin-right: 100px;
-
 }
-.atas h5{
+.atas h5 {
   padding-right: 50px;
-
 }
 /* destination dan mengapa jelajah jatim */
-.container .location-container .logo h6{
+.container .location-container .logo h6 {
   width: 157px;
   height: 18px;
-
 }
-.location{
+.location {
   margin-top: 20px;
   padding: 25px;
-
 }
-.container{
+.container {
   margin: auto;
   max-width: 1170px;
-
 }
 .location-container {
   display: flex;
@@ -76,21 +70,21 @@ body {
   gap: 16px;
 }
 
-.location-container h4{
-  color: var(--light-text-color-body-2, #9A9AB0);
+.location-container h4 {
+  color: var(--light-text-color-body-2, #9a9ab0);
   font-size: 14px;
   font-weight: 400;
-  line-height: 130%; 
+  line-height: 130%;
   letter-spacing: 0.112px;
 }
 
-.container .location-container{
+.container .location-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
 
-.btn-destination{
+.btn-destination {
   display: flex;
   width: 365px;
   height: 56px;
@@ -99,257 +93,268 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  background: var(--light-secondary-color-10, #FCDCCF);
-  color: var(--light-secondary-color-50, #F36326);
+  background: var(--light-secondary-color-10, #fcdccf);
+  color: var(--light-secondary-color-50, #f36326);
 }
 
 .container-6 {
-    display: flex;
-    flex-direction: column;
-    margin: 100px 0;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .services-heading p {
-    color: black;
-    font-size: 40px;
-  }
-  
-  .destination-card{
-    display: flex;
-    height: 330px;
-    padding: 5px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 12px;
-    border: 3px solid var(--light-separators-colors-primary, #E1E1FB);
-    background: var(--light-base-color-white, #FFF);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .dest-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-  }
+.services-heading p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: black;
+  font-size: 40px;
+}
 
-  .services-card {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 24px;
-  }
-  
-  .scard {
-    border-radius: 4px;
-    background: #FFF0F0;
-    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.09);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+.destination-card {
+  display: flex;
+  height: 330px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 12px;
+  border: 3px solid var(--light-separators-colors-primary, #e1e1fb);
+  background: var(--light-base-color-white, #fff);
+}
 
-  }
+.dest-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
 
-  .scard img{
-    width: 80px;
-  }
-  
-  .services-card > div {
-    display: flex;
-    width: 338px;
-    padding: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-  
-  .services-card .scard b.second-text {
-    color: #F00;
-    font-size: 26px; 
-    font-weight: 400;
-    line-height: 39px;
-  }
-  
-  .services-card .scard p.third-text {
-    color: #6C757D;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
-  .services-card .scard:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-  }
+.services-card {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 24px;
+}
 
-  button{
-    background-color: #FFB6B6;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 10px 0;
-    cursor: pointer;
-  }
+.scard {
+  border-radius: 4px;
+  background: #fff0f0;
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
 
-  a {
-    text-decoration: none;
-  }
+.scard img {
+  width: 80px;
+}
 
-  /* dropdown */
-  .flex-jadwal {
-    margin-top: 200px;
-    box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
-    margin-left: 140px;
-    margin-right: 140px;
-    align-items: center;
-    margin-bottom: 300px;
-    display: flex;
-  }
-  /* FLEXBOX JADWAL */
-  .flex-jadwal > .bar {
-    padding: 40px;
-    margin: 0px 15px 0px 15px;
-    color: #000;
-    text-align: center;
-    font-size: 17px;
-    height: 30px;
-  }
-  .bar p {
-    margin-top: 5px;
-    color: #9a9ab0;
-  }
-  .button-explore {
-    display: flex;
-    position: absolute;
-  }
-  .explore {
-    color: #f36326;
-    background-color: #fcdccf;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
-  }
-  .explore:hover {
-    color: #ffff;
-    background-color: #ed5c01;
-  }
-  /* FLEX JADWAL 2 */
-  .flex-jadwal-2 {
-    margin-top: 50px;
-    margin-left: 50px;
-    box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
-    width: 1400px;
-    display: flex;
-  }
-  .flex-jadwal-2 > .barr {
-    padding: 40px;
-    margin: 0px 0px 0px 450px;
-    color: #000;
-    font-size: 16px;
-    height: 70px;
-    text-align: center;
-  }
-  .flex-jadwal-2 .image {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  .p1 {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-  .p2 {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-  .l1 {
-    display: block;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-left: 10px;
-    color: #9a9ab0;
-  }
-  .l2 {
-    display: block;
-    font-size: 12px;
-    margin-top: 40px;
-    margin-left: 10px;
-    color: #9a9ab0;
-  }
-  .p3 {
-    margin-top: -20px;
-    font-weight: 600;
-  }
-  .p4 {
-    display: block;
-    font-size: 12px;
-    font-weight: lighter;
-    margin-top: 20px;
-  }
-  .p5 {
-    margin-top: -20px;
-  }
-  .p6 {
-    margin-top: 10px;
-  }
-  .buy-button {
-    display: block;
-    margin-top: 20px;
-    color: #f36326;
-    background-color: #fcdccf;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
-  }
-  .buy-button:hover {
-    color: #ffff;
-    background-color: #ed5c01;
-  }
-  /* Dropdown */
-  .dropbtn {
-    cursor: pointer;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {
-    background-color: #fcdccf;
-    color: #f36326;
-  }
-  
-  .show {
-    display: block;
-  }
+.services-card > div {
+  display: flex;
+  width: 338px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.services-card .scard b.second-text {
+  color: #f00;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+.services-card .scard p.third-text {
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.services-card .scard:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+button {
+  background-color: #ffb6b6;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* dropdown */
+.image-background {
+  background: url(../image/why/Hello.jpg) no-repeat center;
+  z-index: 1;
+  margin-top: 100px;
+  height: 400px;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.flex-jadwal {
+  background-color: #fff;
+  z-index: 200;
+  margin-top: -40px;
+  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  margin-left: 140px;
+  margin-right: 140px;
+  align-items: center;
+  margin-bottom: 100px;
+  display: flex;
+}
+/* FLEXBOX JADWAL */
+.flex-jadwal > .bar {
+  padding: 40px;
+  margin: 0px 15px 0px 15px;
+  color: #000;
+  text-align: center;
+  font-size: 17px;
+  height: 30px;
+}
+.bar p {
+  margin-top: 5px;
+  color: #9a9ab0;
+}
+.button-explore {
+  display: flex;
+  position: absolute;
+}
+.explore {
+  color: #f36326;
+  background-color: #fcdccf;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+.explore:hover {
+  color: #ffff;
+  background-color: #ed5c01;
+}
+/* FLEX JADWAL 2 */
+.flex-jadwal-2 {
+  margin-top: 50px;
+  margin-left: 50px;
+  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  width: 1400px;
+  display: flex;
+}
+.flex-jadwal-2 > .barr {
+  padding: 40px;
+  margin: 0px 0px 0px 450px;
+  color: #000;
+  font-size: 16px;
+  height: 70px;
+  text-align: center;
+}
+.flex-jadwal-2 .image {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.p1 {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.p2 {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.l1 {
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #9a9ab0;
+}
+.l2 {
+  display: block;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #9a9ab0;
+}
+.p3 {
+  margin-top: -20px;
+  font-weight: 600;
+}
+.p4 {
+  display: block;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+.p5 {
+  margin-top: -20px;
+}
+.p6 {
+  margin-top: 10px;
+}
+.buy-button {
+  display: block;
+  margin-top: 20px;
+  color: #f36326;
+  background-color: #fcdccf;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+.buy-button:hover {
+  color: #ffff;
+  background-color: #ed5c01;
+}
+/* Dropdown */
+.dropbtn {
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #fcdccf;
+  color: #f36326;
+}
+
+.show {
+  display: block;
+}
 
   /* testimoni */
   .container-7 {
@@ -400,129 +405,39 @@ body {
     margin-bottom: 10px;
   }
 
-  /* modal */
-  .modal {
-    display: none; /* You can change this to block or flex when you want to display the modal */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 50px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: auto;
-  }
-  
-  
-  .modal-content {
-    background-color: #fff;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%;
-    max-width: 350px; /* Adjusted to match the image */
-    border-radius: 5px;
-  }
-  
-  
-  .close {
-    position: static;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .modal-content h3 {
-    font-size: 1.5rem; /* Adjusted for better sizing */
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: .5rem; /* Slightly reduce the space under labels */
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px; /* Consistent margin for all input/select */
-  }
-  
-  .form-group input {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px; /* Consistent margin for all input/select */
-  }
-  .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px; /* Consistent margin for all input/select */
-  }
-  
-  button.submit-button {
-    width: calc(100% - 20px); /* Account for padding */
-    padding: 10px;
-    background-color: #f36326; /* Match the button color in the image */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px; /* Add space above the button */
-    cursor: pointer;
-  }
-  
-  button.submit-button:hover {
-    background-color: #ec971f; /* Darker shade on hover */
+@media only screen and (max-width: 970px) {
+  .flex-jadwal {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  @media only screen and (max-width: 970px) {
-    .flex-jadwal {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 50px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  
-    .bar p {
-      margin-top: 5px;
-      color: #9a9ab0;
-    }
-    .button-explore {
-      margin-left: 0px;
-      position: relative;
-    }
+  .bar p {
+    margin-top: 5px;
+    color: #9a9ab0;
   }
-  @media only screen and (max-width: 1200px) {
-    .flex-jadwal > .bar {
-      margin-left: 10px;
-      margin: 0px 0px 0px 0px;
-    }
-    .flex-jadwal {
-      width: auto;
-      margin-left: 20px;
-      
-    }
+  .button-explore {
+    margin-left: 0px;
+    position: relative;
   }
-  
-  @media only screen and (max-width: 1350px) {
-    .flex-jadwal {
-      width: auto;
-      margin-left: 20px;
-      margin-right: 50px;
-      
-    }
+}
+@media only screen and (max-width: 1200px) {
+  .flex-jadwal > .bar {
+    margin-left: 10px;
+    margin: 0px 0px 0px 0px;
   }
-  
-  
+  .flex-jadwal {
+    width: auto;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .flex-jadwal {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+}
