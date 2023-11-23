@@ -404,7 +404,91 @@ a {
     border-radius: 50%;
     margin-bottom: 10px;
   }
+/* Modal */
+.modal {
+  display: none; /* You can change this to block or flex when you want to display the modal */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
 
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 350px; /* Adjusted to match the image */
+  border-radius: 5px;
+}
+
+
+.close {
+  position: static;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem; /* Adjusted for better sizing */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: .5rem; /* Slightly reduce the space under labels */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Consistent margin for all input/select */
+}
+
+.form-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Consistent margin for all input/select */
+}
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Consistent margin for all input/select */
+}
+
+button.submit-button {
+  width: calc(100% - 20px); /* Account for padding */
+  padding: 10px;
+  background-color: #f36326; /* Match the button color in the image */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px; /* Add space above the button */
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: #ec971f; /* Darker shade on hover */
+}
 @media only screen and (max-width: 970px) {
   .flex-jadwal {
     flex-direction: column;

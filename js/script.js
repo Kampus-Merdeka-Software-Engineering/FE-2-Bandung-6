@@ -195,3 +195,28 @@ window.onload = function () {
   });
 };
 
+// Modal index
+function openModal() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "block";
+}
+
+// Fungsi untuk menutup modal
+function closeModal() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+window.onload = function () {
+  var registerButtons = document.querySelectorAll(".button-link-schedule");
+  registerButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+          openModal();
+      });
+  });
+
+  var closeButton = document.querySelector(".close");
+  closeButton.addEventListener("click", function () {
+      closeModal();
+  });
+};
