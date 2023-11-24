@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #721c24; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+  padding: 0 10px; */
+}
+.login-body {
+  height: 10vh;
+  background: url(../logo/G1.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.wrapperz {
+  margin-top: 50px;
+  max-height: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffff;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+.wrapperz .input-data {
+  height: 21.5px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.wrapperz .input-data input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+.formz form .error-text {
+  color: #721c24;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 10px;
+  display: none;
+}
+.formz form .name-details {
+  display: flex;
+}
+.formz .name-details .field:first-child {
+  margin-right: 10px;
+}
+.formz .name-details .field:last-child {
+  margin-left: 10px;
+}
+.formz form .field {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  position: relative;
+}
+.formz form .field label {
+  margin-bottom: 1px;
+}
+
+.formz form .field input {
+  outline: none;
+}
+
+.formz form .image input {
+  font-size: 17px;
+}
+.formz form .button input {
+  height: 45px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  background: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 13px;
+}
+.formz form .button input:hover {
+  background: #5837d0;
+}
+.formz form .field i {
+  position: relative;
+  right: 15px;
+  top: 70%;
+  color: #ccc;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.formz {
+  padding: 25px 30px 40px;
+  align-items: center;
+  display: flex;
+}
+.formz .link {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 12px;
+}
+.formz .link a {
+  color: #333;
+}
+.formz .link a:hover {
+  text-decoration: underline;
+  color: #5837d0;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-15px);
+  font-size: 15px;
+  color: #5837d0;
+  border: none;
+}
+
+img {
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
+.Info {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #a0a0a2;
+}
+
+
+.wrapperz .input-data label {
+  position: absolute;
+  bottom: 5px;
+  margin-top: -2px;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapperz .input-data .underline {
+  position: absolute;
+  bottom: 0px;
+  height: 0px;
+  width: 100%;
+}
+
