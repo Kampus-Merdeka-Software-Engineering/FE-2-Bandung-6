@@ -7,12 +7,51 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .container {
-  margin-top: 150px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+.container-atas {
+  margin: 0px 400px 0px 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+  margin-top: 150px;
+  display: flex;
+  margin-bottom: 20px;
+  height: 60vh;
+}
+.line{
+  height: 30px;
+  background-color: #ed5c01;
+  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
+}
+.container-kiri {
+  margin-left: 30px;
+  margin-top: 50px;
+  width: 60%;
+}
+.container-kanan {
+  line-height: 50px;
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 40%;
+}
+.container-kanan img{
+  margin-right:  20px;
+}
+.detail-destination {
+  text-align: center;
+}
+.container-kiri h3 {
+  text-align: center;
+}
+.container-kiri img {
+  font-size: 30px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 .contact-details {
@@ -36,7 +75,7 @@ h2 {
 }
 
 .pilih-kursi {
-  background-color: orange;
+  background-color: #ed5c01;
   color: white;
   border: 1px solid #ddd;
   border-radius: 2mm;
@@ -83,13 +122,11 @@ form {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-
 .input-group2 {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
-
 .input-group label {
   margin-bottom: 5px;
 }
@@ -151,7 +188,7 @@ p {
   content: 'expand_less';
 }
 .input-box:empty::after {
-  content: 'Select Title';
+  content: 'Pilih Kursi';
   color: rgba(0, 0, 0, 0.5);
 }
 .list {
@@ -262,7 +299,7 @@ input:checked + label::before {
 .button-popup > button {
   margin: 0px 20px 0px 20px;
   color: #ed5c01;
-  background-color: #FCDCCF;
+  background-color: #fcdccf;
   border-radius: 10px;
   padding: 10px 15px 10px 15px;
   text-decoration: none;
