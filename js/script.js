@@ -267,15 +267,3 @@ window.onload = function () {
 document.addEventListener('DOMContentLoaded', function () {
   startSlideshow();
 });
-const pswrdField = document.querySelector(".form input[type='password']"),
-  toggleIcon = document.querySelector('.form .field i');
-
-toggleIcon.onclick = () => {
-  if (pswrdField.type === 'password') {
-    pswrdField.type = 'text';
-    toggleIcon.classList.remove('active');
-  } else {
-    pswrdField.type = 'password';
-    toggleIcon.classList.add('active');
-  }
-};
