@@ -5,13 +5,51 @@
     <meta name="viewport" content="width=He, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Travel</title>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="/image/icons/logo.svg" alt="logo" />
+      </div>
+      <div class="navbar-nav">
+        <ul id="menu-list">
+          <li>
+            <a href="">
+              <span class="material-icons-outlined"> home </span>
+              <label for="">Home</label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="material-icons-outlined"> apartment </span>
+              <label for="">City</label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="material-icons-outlined"> shopping_cart </span>
+              <label for="">Payment</label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="material-icons-outlined"> group </span>
+              <label for="">About Us</label>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+        <i class="ph ph-list"></i>
+      </div>
+    </nav>
     <section class="hero">
       <h1 class="left-text">Aku Ingin menjadi seorang kapiten</h1>
       <h5 class="right-text">Sakura definitely has its commercial purposes, but its celebration has very strong ties with important memories for many Japanese people. It falls in line with the end.</h5>
@@ -293,7 +331,52 @@
         </div>
       </div>
     </section>
-    <div id="foot-placeholder"></div>
+    <footer class="footer">
+      <div class="row">
+        <div class="footer-col foot-left">
+          <img src="/image/icons/logo.svg" alt="logo" />
+          <div class="social-links">
+            <a href="#"><i class="fa-solid fa-location-dot"></i>221 B Santa Monica, Los Angeles</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>(+1) 923 2341 22</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>contact@tanahairstudio.com</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">How to Book</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Flight</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Train</a></li>
+            <li><a href="#">Bus</a></li>
+            <li><a href="#">Car Rental</a></li>
+            <li><a href="#">Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Code of Condact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row2">
+        <br />
+        <p>@2020 TanahAir Studio. All rights reserved.</p>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
