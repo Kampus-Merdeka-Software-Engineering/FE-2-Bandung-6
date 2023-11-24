@@ -1,28 +1,36 @@
 .navbar {
   display: flex;
   position: fixed;
-  justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 40px;
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
+.navbar .navbar-nav{
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+
+}
 
 .navbar .nav-logo {
-  display: flex;
+  margin-right: auto;
   align-items: center;
   font-size: 30px;
-  margin-right: 100px;
+  
 }
 
 .navbar .navbar-nav ul,
 .navbar .navbar-nav li {
-  float: left;
+  cursor: pointer;
+  float: right;
+  display: flex;
+  justify-content: end;
   color: #062d3e;
   display: flex;
   font-size: 15px;
@@ -38,6 +46,11 @@ nav .navbar-extra {
   color: #062d3e;
   padding: 10px;
   text-decoration: none;
+}
+.navbar .navbar-nav,
+.navbar .navbar-extra{
+  justify-content: end;
+
 }
 
 .navbar .navbar-nav li:hover a {
@@ -55,28 +68,26 @@ nav .navbar-extra {
   transform: scaleX(0.5);
   transition: 0.2s linear;
 }
+
 .menu-icon {
   font-size: 28px;
   display: none;
 }
-.sign-in {
-  color: #ffff;
-  background-color: #ed5c01;
-  border-radius: 10px;
-  padding: 10px 15px 10px 15px;
-  text-decoration: none;
-}
-.sign-up {
-  color: #000;
-  padding: 10px 15px 10px 15px;
-  text-decoration: none;
-}
+
 .show {
   display: block;
+}
+.material-icons-outlined{
+  margin-right: 10px;
+  color: #000;
 }
 /* Responsive */
 
 @media only screen and (max-width: 768px) {
+  .navbar .navbar-nav .material-icons-outlined {
+    margin-left: 0; /* Menghapus margin kiri pada ikon */
+    margin-right: 20px; /* Menambah margin kanan pada ikon */
+  }
   .navbar {
     z-index: 0;
     position: relative;
@@ -89,31 +100,22 @@ nav .navbar-extra {
     position: absolute;
   }
   .navbar .navbar-nav {
-    margin-top: 60px;
-    margin-left: 20px;
+    margin-top: 70px;
   }
 
-  .navbar .navbar-nav ul,
+
   .navbar .navbar-nav li {
-    width: 108%;
+    justify-content: flex-end;
+    width: 100%;
     flex-direction: column;
     margin-top: 0px;
-    text-align: center; /* Menyusun menu di tengah pada layar kecil */
+    margin-left: auto;
   }
 
-  .navbar .navbar-nav,
-  .navbar-extra {
+  .navbar .navbar-nav{
     width: 100%; /* Pastikan lebar penuh pada layar kecil */
   }
 
-  .navbar-extra {
-    /* Memberi jarak antara navbar-nav dan navbar-extra */
-    width: 100%;
-    display: flex;
-    margin-left: 50px;
-    justify-content: center;
-    align-items: center;
-  }
 
   .menu-icon {
     cursor: pointer;
@@ -124,19 +126,17 @@ nav .navbar-extra {
     margin: 1.4rem 5%;
   }
 
-  .navbar .navbar-nav ul,
-  nav .navbar-extra {
+  .navbar .navbar-nav ul{
     display: none;
   }
 
-  .navbar .navbar-nav ul.show,
-  .navbar-extra.show {
+  .navbar .navbar-nav ul.show
+  {
     display: flex;
     flex-direction: column;
   }
 
-  nav .navbar-nav,
-  nav .navbar-extra {
+  nav .navbar-nav{
     transform: translateX(0); /* Mengembalikan posisi untuk tampilan menu-icon */
   }
   .navbar .navbar-nav li:hover a {
@@ -147,12 +147,3 @@ nav .navbar-extra {
   }
 }
 
-@media only screen and (max-width: 970px) {
-  nav .navbar-nav {
-    transform: translateX(-60px);
-  }
-  nav .navbar-extra {
-    transform: translateX(-50px);
-  }
-
-}
