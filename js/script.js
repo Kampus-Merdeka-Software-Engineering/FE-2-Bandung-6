@@ -243,27 +243,34 @@ function openModal() {
   modal.style.display = 'block';
 }
 
-// Fungsi untuk menutup modal
-function closeModal() {
-  var modal = document.getElementById('modal');
-  modal.style.display = 'none';
-}
-
-window.onload = function () {
-  var registerButtons = document.querySelectorAll('.button-link-schedule');
-  registerButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      openModal();
-    });
-  });
-
-  var closeButton = document.querySelector('.close');
-  closeButton.addEventListener('click', function () {
-    closeModal();
-  });
-};
-
 // Panggil fungsi ini untuk memulai slideshow
 document.addEventListener('DOMContentLoaded', function () {
   startSlideshow();
 });
+
+// js detail (blm jalan hiks)
+document.addEventListener('DOMContentLoaded', () => {
+  const deleteButton = document.querySelector('.delete');
+  const editButton = document.querySelector('.edit');
+  const payButton = document.querySelector('.bayar');
+
+  deleteButton.addEventListener('click', function() {
+    // Implementation for delete action
+    console.log('Delete action triggered');
+  });
+
+  editButton.addEventListener('click', function() {
+    // Implementation for edit action
+    console.log('Edit action triggered');
+  });
+
+  payButton.addEventListener('click', function() {
+    // Implementation for pay action
+    console.log('Pay action triggered');
+  });
+});
+
+//js modal pop up payment
+
+var btn = document.getElementById("openPopup");
+

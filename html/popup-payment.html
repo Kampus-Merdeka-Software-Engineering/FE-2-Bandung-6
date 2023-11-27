@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Popup</title>
+</head>
+
+<body>
+<style>
+    /* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #ececec;
+  }
+  
+  /* Button to open modal */
+  #openPopup {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Modal content styling */
+  h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .file-upload-label {
+    display: block;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Style adjustments for the file input button */
+  .file-upload-label:hover {
+    background: #0056b3;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .submit-btn {
+    background-color: #FFD5C2;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+  
+  .submit-btn:hover {
+    background-color: #ffbea9;
+  }
+  
+  /* Small screen adjustments */
+  @media only screen and (max-width: 600px) {
+    .modal-content {
+      margin: 20% auto;
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  }
+</style>
+
+<!-- Trigger button for the popup -->
+<!-- <button id="openPopup">Bayar</button> -->
+
+<!-- The Modal -->
+<!-- <div id="myModal" class="modal"> -->
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="location.href='payment_new.html'">&times;</span>
+    <h2>Pilih Outlet Tujuan dan Tanggal</h2>
+    <label for="paymentMethod">Metode Pembayaran</label>
+    <select id="paymentMethod">
+      <option value="bank">bank/e-wallet</option>
+        <option value="cash">bank</option>
+        <option value="ovo">e-wallet</option>
+    </select>
+    <div class="upload-section">
+      <label for="file-upload" class="file-upload-label">
+        Upload Bukti Pembayaran
+        <input type="file" id="file-upload">
+      </label>
+    </div>
+    <button class="submit-btn">Kirim</button>
+  </div>
+
+</div>
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openPopup");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

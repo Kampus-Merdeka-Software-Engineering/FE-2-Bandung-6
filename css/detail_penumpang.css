@@ -74,18 +74,6 @@ h2 {
   justify-content: center;
 }
 
-.pilih-kursi {
-  background-color: #ed5c01;
-  color: white;
-  border: 1px solid #ddd;
-  border-radius: 2mm;
-  padding: 10px 20px;
-  width: 50%;
-  display: block;
-  margin: 10px auto;
-  cursor: pointer;
-}
-
 /* FORM */
 form {
   margin-top: 5px;
@@ -97,10 +85,6 @@ form {
   flex-wrap: wrap;
 }
 
-.form-group {
-  flex: 1;
-  margin-right: 10px;
-}
 .inputan {
   flex: 1;
   margin-right: 20px;
@@ -122,11 +106,7 @@ form {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.input-group2 {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .input-group label {
   margin-bottom: 5px;
 }
