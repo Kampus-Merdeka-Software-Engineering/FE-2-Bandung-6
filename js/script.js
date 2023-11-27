@@ -247,30 +247,25 @@ function openModal() {
 document.addEventListener('DOMContentLoaded', function () {
   startSlideshow();
 });
+// script.js
 
-// js detail (blm jalan hiks)
-document.addEventListener('DOMContentLoaded', () => {
-  const deleteButton = document.querySelector('.delete');
-  const editButton = document.querySelector('.edit');
-  const payButton = document.querySelector('.bayar');
+function setupFileUpload() {
+  const fileUploadInput = document.getElementById('file-upload');
+  const fileUploadText = document.getElementById('file-upload-text');
 
-  deleteButton.addEventListener('click', function() {
-    // Implementation for delete action
-    console.log('Delete action triggered');
+  // Menambahkan event listener untuk mereset nilai input berkas saat label diklik
+  fileUploadText.addEventListener('click', function () {
+    // Me-reset nilai input berkas sehingga pengguna dapat memilih berkas baru
+    fileUploadInput.value = null;
+    fileUploadText.innerHTML = 'Upload Bukti Pembayaran';
   });
 
-  editButton.addEventListener('click', function() {
-    // Implementation for edit action
-    console.log('Edit action triggered');
+  // Menambahkan event listener untuk mengupdate label setelah berkas diunggah
+  fileUploadInput.addEventListener('change', function () {
+    const fileName = fileUploadInput.files[0].name;
+    fileUploadText.innerHTML = `Bukti Pembayaran: ${fileName}`;
   });
+}
 
-  payButton.addEventListener('click', function() {
-    // Implementation for pay action
-    console.log('Pay action triggered');
-  });
-});
-
-//js modal pop up payment
-
-var btn = document.getElementById("openPopup");
-
+// Export fungsi setupFileUpload agar bisa dipanggil dari luar
+window.setupFileUpload = setupFileUpload;
