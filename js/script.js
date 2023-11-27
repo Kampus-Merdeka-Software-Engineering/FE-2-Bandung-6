@@ -247,7 +247,7 @@ function openModal() {
 document.addEventListener('DOMContentLoaded', function () {
   startSlideshow();
 });
-// script.js
+// popup
 
 function setupFileUpload() {
   const fileUploadInput = document.getElementById('file-upload');
