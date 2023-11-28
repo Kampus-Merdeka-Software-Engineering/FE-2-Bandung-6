@@ -2,23 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=He, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <
     <title>Travel</title>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+    <!-- Header -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="./image/icons/logo.svg" alt="logo" />
+      </div>
+      <div class="navbar-nav">
+        <ul id="menu-list">
+          <li>
+            <a href="/">
+              <span class="material-icons-outlined"> home </span>
+              <label for="">Home</label>
+            </a>
+          </li>
+          <li>
+            <a href="./html/city.html">
+              <span class="material-icons-outlined"> apartment </span>
+              <label for="">City</label>
+            </a>
+          </li>
+          <li>
+            <a href="./html/payment.html">
+              <span class="material-icons-outlined"> shopping_cart </span>
+              <label for="">Payment</label>
+            </a>
+          </li>
+          <li>
+            <a href="./html/aboutus.html">
+              <span class="material-icons-outlined"> group </span>
+              <label for="">About Us</label>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+        <i class="ph ph-list"></i>
+      </div>
+    </nav>
+    <!-- Akhir Header -->
+
+    <!-- Section 1 -->
     <section class="hero">
-      <h1 class="left-text">Mau kemana nih, Jatimers?</h1>
+      <h1 class="left-text">Aku Ingin menjadi seorang kapiten</h1>
       <h5 class="right-text">
-        Pergi antar kota #AntiRibet
-        <br />
-        Dengan Jejatim, pilihan tepat dan sat set!
+        Sakura definitely has its commercial purposes, but its celebration has
+        very strong ties with important memories for many Japanese people. It
+        falls in line with the end.
       </h5>
     </section>
     <section>
@@ -117,11 +158,11 @@
               </div>
             </div>
           </div>
-          <p id="selecteDropdown3">Tanggal</p>
+          <p id="selecteDropdown3">Waktu</p>
         </div>
         <div class="bar">
           <div class="bar-2">
-            <label for="people">Person</label>
+            <label for="people">People</label>
             <div class="dropdown">
               <img
                 src="/image/icons/arrow-down-sign-to-navigate (1).png"
@@ -148,16 +189,18 @@
               </div>
             </div>
           </div>
-          <p id="selecteDropdown4">Orang</p>
+          <p id="selecteDropdown4">Jumlah Orang</p>
         </div>
         <div class="bar">
           <div class="button-explore">
-            <a href="" class="explore">Jelajah</a>
+            <a href="" class="explore">Explore Now</a>
           </div>
         </div>
       </div>
     </section>
+    <!-- Akhir Section 1 -->
 
+    <!-- Section 2 -->
     <section class="tiga">
       <div class="container-6">
         <div class="services-heading">
@@ -174,7 +217,7 @@
               <img src="./image/destination/jember.jpg" alt="" />
               <img src="./image/destination/Maps.png" alt="" />
             </div>
-            <button class="btn-destination">LIHAT</button>
+            <button class="btn-destination">View Availability</button>
           </div>
           <div class="destination-card">
             <div class="location-container">
@@ -186,7 +229,7 @@
               <img src="./image/destination/mojokerto.jpg" alt="" />
               <img src="/image/destination/Maps.png" alt="" />
             </div>
-            <button class="btn-destination">LIHAT</button>
+            <button class="btn-destination">View Availability</button>
           </div>
           <div class="destination-card">
             <div class="location-container">
@@ -196,9 +239,9 @@
             <h4>Jl. Gubernur Suryo No.30, Kec. Genteng, Surabaya</h4>
             <div class="destination-img">
               <img src="./image/destination/image5.png" alt="" />
-              <img src="/image/destination/Maps.png" alt="" />
+              <img src="./image/destination/Maps.png" alt="" />
             </div>
-            <button class="btn-destination">LIHAT</button>
+            <button class="btn-destination">View Availability</button>
           </div>
           <div class="destination-card">
             <div class="location-container">
@@ -208,9 +251,9 @@
             <h4>Jl. Merdeka Selatan No.2, Kec. Klojen, Malang</h4>
             <div class="destination-img">
               <img src="./image/destination/image5.png" alt="" />
-              <img src="/image/destination/Maps.png" alt="" />
+              <img src="./image/destination/Maps.png" alt="" />
             </div>
-            <button class="btn-destination">LIHAT</button>
+            <button class="btn-destination">View Availability</button>
           </div>
           <div class="destination-card">
             <div class="location-container">
@@ -220,9 +263,9 @@
             <h4>Jl. Brigjen Katamso No.39, Kediri</h4>
             <div class="destination-img">
               <img src="./image/destination/image5.png" alt="" />
-              <img src="/image/destination/Maps.png" alt="" />
+              <img src="./image/destination/Maps.png" alt="" />
             </div>
-            <button class="btn-destination">LIHAT</button>
+            <button class="btn-destination">View Availability</button>
           </div>
           <div class="destination-card">
             <div class="location-container">
@@ -232,13 +275,79 @@
             <h4>Jl. Jenderal Ahmad Yani No.82, Taman Baru, Banyuwangi</h4>
             <div class="destination-img">
               <img src="./image/destination/image5.png" alt="" />
-              <img src="/image/destination/Maps.png" alt="" />
+              <img src="./image/destination/Maps.png" alt="" />
             </div>
-            <button class="btn-destination">LIHAT</button>
+            <button class="btn-destination">View Availability</button>
           </div>
         </div>
       </div>
     </section>
+    <!-- Akhir section 2 -->
+
+    <!-- Modal popup -->
+    <section class="modalpopup">
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h3>Pilih Autlet Tujuan dan Tanggal</h3>
+          <form id="registrationForm" class="registration-form">
+            <!-- Asal -->
+            <div class="form-group">
+              <label for="asal">Asal:</label>
+              <select
+                type="text"
+                id="asal"
+                class="form-control"
+                name="asal"
+                placeholder="Jl Babakansari"
+                required
+              >
+                <option value="">Pilih Daerah</option>
+                <option value="jepara">Jepara</option>
+                <!-- Add other options as needed -->
+              </select>
+            </div>
+            <!-- Tujuan -->
+            <div class="form-group">
+              <label for="tujuan">Tujuan:</label>
+              <select id="tujuan" class="form-control" name="tujuan" required>
+                <option value="">Pilih Daerah</option>
+                <option value="jepara">Jepara</option>
+                <!-- Add other options as needed -->
+              </select>
+            </div>
+            <!-- Jumlah Orang -->
+            <div class="form-group">
+              <label for="jumlahOrang">Jumlah orang:</label>
+              <input
+                type="number"
+                id="jumlahOrang"
+                class="form-control"
+                name="jumlahOrang"
+                placeholder="4"
+                required
+              />
+            </div>
+            <!-- Tanggal Berangkat -->
+            <div class="form-group">
+              <label for="tanggalBerangkat">Tgl berangkat:</label>
+              <input
+                type="date"
+                id="tanggalBerangkat"
+                class="form-control"
+                name="tanggalBerangkat"
+                required
+              />
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Lihat Jadwal</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir modal popup -->
+
+    <!-- Section 3 -->
     <section class="empat">
       <div class="container-6">
         <div class="services-heading">
@@ -314,59 +423,53 @@
         <div class="carousel fade">
           <div class="testimonial-card">
             <img src="/image/aboutus/me1.png" alt="Customer 1" />
-            <p>"Thanks Jejatim, sangat praktis, mudah dan muraah, love it!"</p>
-            <br />
-            <p><strong>Adinda Syawal</strong></p>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </p>
+            <p><strong>Customer 1</strong></p>
           </div>
           <div class="testimonial-card">
             <img src="/image/aboutus/me1.png" alt="Customer 2" />
             <p>
-              "Sempet ragu karena baru pertama kali coba, tapi ternyata worth
-              it! bakal pake jejatim lagi."
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur."
             </p>
-            <br />
-            <p><strong>Abdi Sirait</strong></p>
+            <p><strong>Customer 2</strong></p>
           </div>
           <div class="testimonial-card">
             <img src="/image/aboutus/me1.png" alt="Customer 3" />
             <p>
-              "Selalu tepat waktu, saya suka bolak balik antar kota jadi ga
-              khawatir karena estimasi waktu nya pas dan sesuai"
+              "Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat."
             </p>
-            <br />
-            <p><strong>Desty Rini</strong></p>
+            <p><strong>Customer 3</strong></p>
           </div>
         </div>
         <div class="carousel fade">
           <div class="testimonial-card">
             <img src="/image/aboutus/me2.jpg" alt="Customer 1" />
             <p>
-              "Sempet bingung pas seat nya keambil orang, panik banget takut ga
-              dapet kursi langsung hub cs terus banik banget dicariin yang
-              sesuai, besttttt"
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua."
             </p>
-            <br />
-            <p><strong>Bagus Aidin</strong></p>
+            <p><strong>Customer 1</strong></p>
           </div>
           <div class="testimonial-card">
             <img src="/image/aboutus/me2.jpg" alt="Customer 2" />
             <p>
-              "Perjalanan nyaman, AC dingin, dapet snack, makan siang enak,
-              minusnya cuma apes banget sebelah saya bapak2 tidur ngoroknya
-              kenceng bener"
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur."
             </p>
-            <br />
-            <p><strong>Faiz Al Wafi</strong></p>
+            <p><strong>Customer 2</strong></p>
           </div>
           <div class="testimonial-card">
             <img src="/image/aboutus/me2.jpg" alt="Customer 3" />
             <p>
-              "wuenaak mas/mba, anak saya juga ga rewel selama perjalanan,
-              artinya nyaman toh? insya Allah kalau ada rejeki bakal pake
-              jejatim lagi"
+              "Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat."
             </p>
-            <br />
-            <p><strong>Endang Mulyawati</strong></p>
+            <p><strong>Customer 3</strong></p>
           </div>
         </div>
         <br />
@@ -376,7 +479,64 @@
         </div>
       </div>
     </section>
-    <div id="foot-placeholder"></div>
-    <script src="../js/script.js"></script>
+    <!-- Akhir Section 4 -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="footer-col foot-left">
+          <img src="./image/icons/logo.svg" alt="logo" />
+          <div class="social-links">
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i>221 B Santa Monica, Los
+              Angeles</a
+            >
+            <a href="#"><i class="fa-solid fa-phone"></i>(+1) 923 2341 22</a>
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>contact@tanahairstudio.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">How to Book</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Flight</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Train</a></li>
+            <li><a href="#">Bus</a></li>
+            <li><a href="#">Car Rental</a></li>
+            <li><a href="#">Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Code of Condact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row2">
+        <br />
+        <p>@2020 TanahAir Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Link Javascript -->
+    <script src="./js/script.js"></script>
+    <!-- Akhir Link Javascript -->
   </body>
 </html>

@@ -211,20 +211,61 @@ function startSlideshow() {
     navigateTo: navigateToSlide,
   };
 }
+//modal
+function openModal() {
+  var modal = document.getElementById('modal');
+  modal.style.display = 'block';
+}
+
+// Fungsi untuk menutup modal
+function closeModal() {
+  var modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+
+window.onload = function () {
+  var registerButtons = document.querySelectorAll('.button-link-schedule');
+  registerButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      openModal();
+    });
+  });
+
+  var closeButton = document.querySelector('.close');
+  closeButton.addEventListener('click', function () {
+    closeModal();
+  });
+};
+
+// Modal index
+function openModal() {
+  var modal = document.getElementById('modal');
+  modal.style.display = 'block';
+}
 
 // Panggil fungsi ini untuk memulai slideshow
 document.addEventListener('DOMContentLoaded', function () {
   startSlideshow();
 });
-const pswrdField = document.querySelector(".form input[type='password']"),
-  toggleIcon = document.querySelector('.form .field i');
+// popup
 
-toggleIcon.onclick = () => {
-  if (pswrdField.type === 'password') {
-    pswrdField.type = 'text';
-    toggleIcon.classList.remove('active');
-  } else {
-    pswrdField.type = 'password';
-    toggleIcon.classList.add('active');
-  }
-};
+function setupFileUpload() {
+  const fileUploadInput = document.getElementById('file-upload');
+  const fileUploadText = document.getElementById('file-upload-text');
+
+  // Menambahkan event listener untuk mereset nilai input berkas saat label diklik
+  fileUploadText.addEventListener('click', function () {
+    // Me-reset nilai input berkas sehingga pengguna dapat memilih berkas baru
+    fileUploadInput.value = null;
+    fileUploadText.innerHTML = 'Upload Bukti Pembayaran';
+  });
+
+  // Menambahkan event listener untuk mengupdate label setelah berkas diunggah
+  fileUploadInput.addEventListener('change', function () {
+    const fileName = fileUploadInput.files[0].name;
+    fileUploadText.innerHTML = `Bukti Pembayaran: ${fileName}`;
+  });
+}
+
+// Export fungsi setupFileUpload agar bisa dipanggil dari luar
+window.setupFileUpload = setupFileUpload;
