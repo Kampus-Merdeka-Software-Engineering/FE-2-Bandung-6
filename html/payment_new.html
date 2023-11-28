@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="../css/payment_new.css">
+</head>
+<body>
+    <form id="payment-form">
+        <section class="payment-method">
+            <h2><center> Pilih Metode Pembayaran</center></h2>
+            <h3>Bank Account</h3>
+            <div class="bank-selection">
+                <label><input type="radio" name="bank" value="BCA"> BCA (no. rekening: 2470012345)</label>
+                <label><input type="radio" name="bank" value="Mandiri"> Mandiri(no. rekening: 2470012345)</label>
+                <label><input type="radio" name="bank" value="BRI"> BRI(no. rekening: 2470012345)</label>
+                <label><input type="radio" name="bank" value="BNI"> BNI(no. rekening: 2470012345)</label>
+            </div>
+            <h3>E-wallet</h3>
+            <div class="e-wallet-selection">
+                <label><input type="radio" name="e-wallet" value="Dana">Dana(088765543212)</label>
+                <label><input type="radio" name="e-wallet" value="Shopeepay">Shopeepay(088765543212)</label>
+                <label><input type="radio" name="e-wallet" value="Gopay">Gopay(088765543212)</label>
+            </div>
+        </section>
+
+        <section class="payment-summary">
+            <h2>Detail harga</h2>
+            <p>Jumlah Tiket: <span id="ticket-amount">2</span></p>
+            <p>Harga Tiket: Rp<span id="ticket-price">850,00</span></p>
+            <p>Total Bayar: Rp<span id="total-payment">850,00</span></p>
+        </section>
+
+        <div class="terms">
+            <label>
+                <input type="checkbox" id="agree-terms" name="agree-terms">
+                I have agreed to the rules, Terms and Conditions.
+            </label>
+        </div>
+        <button type="button" id="openPopup" onclick="location.href='popup-payment.html'">Bayar</button>
+    </form>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
