@@ -18,7 +18,7 @@
     <!-- Akhir Header -->
 
     <!-- Container atas -->
-    <div class="container-atas">
+    <!-- <div class="container-atas">
       <div class="container-kiri">
         <h3>Tempat Tujuan</h3>
         <img src="../image/destination/kediri.jpg" alt="" />
@@ -53,13 +53,47 @@
         </div>
       </div>
     </div>
-    <div class="line"></div>
+    <div class="line"></div> -->
     <!-- Batas Container Atas -->
 
     <!-- Container Bawah -->
     <div class="container">
       <div class="contact-details">
-        <h2>Informasi Kontak</h2>
+        <h3>Tempat Tujuan</h3>
+        <img src="../image/destination/kediri.jpg" alt="" />
+        <div class="detail-destination">
+          <h4>Lumajang</h4>
+          <div class="location">
+            <span class="material-icons-outlined"> location_on</span>
+            <span>Jl. Senopati No. 123, Jakarta Selatan</span>
+          </div>
+          <div class="phone">
+            <span class="material-icons-outlined"> call</span>
+            <span>02134</span>
+          </div>
+        </div>
+        <div class="container-kanan">
+          <div class="lokasi-awal">
+            <img src="../image/destination/location_home.svg" alt="" />
+            <span>Lumajang</span>
+          </div>
+          <div class="lokasi-akhir">
+            <img src="../image/destination/location_away.svg" alt="" />
+            <span>Kediri</span>
+          </div>
+          <div class="waktu">
+            <img src="../image/destination/schedule.svg" alt="" />
+            <span>13.00 WIB</span>
+          </div>
+          <div class="jumlah-kursi">
+            <img src="../image/destination/accessible.svg" alt="" />
+            <span>8 Kursi</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="contact-details">
+        <h2>Detail Penumpang</h2>
         <form>
           <div class="input-group">
             <label for="nama">Nama Lengkap</label>
@@ -77,30 +111,17 @@
             <label for="address">Alamat</label>
             <input type="textarea" id="address" name="address" placeholder="Masukkan alamat anda..." required />
           </div>
-        </form>
-      </div>
-      <div class="contact-details">
-        <h2>Detail Penumpang</h2>
-        <form>
-          <div class="input-group">
-            <label for="nama">Nama Lengkap</label>
-            <input type="nama" id="nama" name="nama" placeholder="Masukkan nama lengkap anda ..." required />
-          </div>
           <div class="input-group">
             <label for="tiket">Total Ticket</label>
             <input type="tiket" id="tiket" name="tiket" placeholder="2" readonly />
           </div>
           <div class="input-group">
-            <label for="asal">Kota Asal</label>
-            <input type="asal" id="asal" name="asal" placeholder="Surabaya" readonly />
+            <label date="date">Tanggal</label>
+            <input type="date" id="date" name="date" required/ >
           </div>
-          <div class="input-group">
-            <label for="address">Kota Tujuan</label>
-            <input type="textarea" id="address" name="address" placeholder="Malang" readonly />
-          </div>
-          <button>
-            <a href="detail.html">Lanjutkan</a>
-          </button>
+          <button class = "submit-btn">Lanjutkan
+            <a href="detail.html"></a>
+
         </form>
       </div>
     </div>

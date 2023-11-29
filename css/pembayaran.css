@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.container {
+  padding: 20px;
+  display: inline-flex;
+}
+.container1 {
+  max-width: 350px;
+  margin: 20px 0px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.detail-heading {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.detail-item {
+  margin-bottom: 10px;
+}
+.detail-item label {
+  font-weight: bold;
+  display: block;
+}
+.detail-item span {
+  display: block;
+  margin-bottom: 5px;
+}
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+.button1{
+  display: flex;
+}
+.button-edit {
+  background-color: #ffa940;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* payment */
+#payment-form {
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method, .payment-summary {
+  margin-bottom: 20px;
+}
+
+.payment-method h2, .payment-summary h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.bank-selection label, .e-wallet-selection label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.terms {
+  margin: 20px 0;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #f36326;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f36326b3;
+}
+
+/* pop up */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+input[type=file] {
+  margin-bottom: 10px;
+}
+/* detail */
+.detail-heading {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.detail-item {
+  margin-bottom: 10px;
+}
+.detail-item label {
+  font-weight: bold;
+  display: block;
+}
+.detail-item span {
+  display: block;
+  margin-bottom: 5px;
+}
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+select#paymentMethod {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  #payment-form {
+      margin: 10px;
+  }
+}

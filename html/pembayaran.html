@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/pembayaran.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<title>Ticket Details</title>
+</head>
+
+<body>
+      <!-- Header -->
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="/image/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="navbar-nav">
+          <ul id="menu-list">
+            <li>
+              <a href="/">
+                <span class="material-icons-outlined"> home </span>
+                <label for="">Home</label>
+              </a>
+            </li>
+            <li>
+              <a href="./html/city.html">
+                <span class="material-icons-outlined"> apartment </span>
+                <label for="">City</label>
+              </a>
+            </li>
+            <li>
+              <a href="./html/payment.html">
+                <span class="material-icons-outlined"> shopping_cart </span>
+                <label for="">Payment</label>
+              </a>
+            </li>
+            <li>
+              <a href="./html/aboutus.html">
+                <span class="material-icons-outlined"> group </span>
+                <label for="">About Us</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+          <i class="ph ph-list"></i>
+        </div>
+      </nav>
+      <!-- Akhir Header -->
+<div class="container">
+    <div class="container1">
+    <div class="detail-heading">Detail</div>
+    <div class="detail-item">
+      <label for="from">Dari</label>
+      <span id="from">Bandung</span>
+      <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+    </div>
+    <div class="detail-item">
+      <label for="to">Ke</label>
+      <span id="to">Jepara</span>
+      <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+    </div>
+    <div class="detail-item">
+      <label for="date">Date</label>
+      <span id="date">14/02/2021</span>
+    </div>
+    <div class="detail-item">
+      <label for="tickets">Tiket</label>
+      <span id="tickets">2</span>
+    </div>
+    <div class="detail-item">
+      <label for="price">Price</label>
+      <span id="price">Rp 360.000,00</span>
+    </div>
+  </div>
+  <!-- <div>
+  <button class="button button-edit">edit</button>
+  </div> -->
+  <form id="payment-form">
+    <section class="payment-method">
+        <h2><center> Detail Pembayaran</center></h2>
+        <label for="paymentMethod">Metode Pembayaran</label>
+        <select id="paymentMethod">
+          <option selected value="" >pilih metode pembayaran</option>
+          <option value="BCA">BCA (no. rekening: 2470012345)</option>
+          <option value="BRI">BRI (no. rekening: 2470012345)</option>
+          <option value="BNI">BNI (no. rekening: 2470012345)</option>
+          <option value="Dana">Dana (088765543212)</option>
+          <option value="Shopeepay">Shopeepay (088765543212)</option>
+          <option value="Gopay">Gopay (088765543212)</option>
+        </select>
+    </section>
+    
+  
+    <section class="payment-summary">
+        <h3>Detail harga</h3>
+        <p>Jumlah Tiket: <span id="ticket-amount">2</span></p>
+        <p>Harga Tiket: Rp<span id="ticket-price">360.000,00</span></p>
+        <p>Total Bayar: Rp<span id="total-payment">360.000,00</span></p>
+    </section>
+  
+    <div class="terms">
+        <label>
+            <input type="checkbox" id="agree-terms" name="agree-terms">
+            I have agreed to the rules, Terms and Conditions.
+        </label>
+    </div>
+    <button type="button" id="openPopup" onclick="location.href='popup-payment.html'">Bayar</button>
+  </form>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="footer-col foot-left">
+          <img src="/image/icons/logo.svg" alt="logo" />
+          <div class="social-links">
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i>221 B Santa Monica, Los
+              Angeles</a
+            >
+            <a href="#"><i class="fa-solid fa-phone"></i>(+1) 923 2341 22</a>
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>contact@tanahairstudio.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">How to Book</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Flight</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Train</a></li>
+            <li><a href="#">Bus</a></li>
+            <li><a href="#">Car Rental</a></li>
+            <li><a href="#">Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Code of Condact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row2">
+        <br />
+        <p>@2020 TanahAir Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+
+
+</body>
+</html>

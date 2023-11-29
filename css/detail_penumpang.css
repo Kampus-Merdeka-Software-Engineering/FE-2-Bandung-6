@@ -8,24 +8,10 @@ body {
   padding: 0;
 }
 .container {
-  margin-top: 50px;
+  margin-top: 150px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-}
-.container-atas {
-  margin: 0px 400px 0px 400px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
-  margin-top: 150px;
-  display: flex;
-  margin-bottom: 20px;
-  height: 60vh;
-}
-.line{
-  height: 30px;
-  background-color: #ed5c01;
-  box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
 }
 .container-kiri {
   margin-left: 30px;
@@ -293,4 +279,13 @@ input:checked + label::before {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+button.submit-btn {
+  width: 200px;
+  margin-top: 10px;
+  border: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ed5c01 ;
 }
