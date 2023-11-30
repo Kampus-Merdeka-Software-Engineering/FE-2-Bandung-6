@@ -208,8 +208,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  border-radius: 10px;
-  border: 1.5px solid var(--light-separators-colors-primary, #e1e1fb);
+  border-radius: 12px;
+  border: 3px solid var(--light-separators-colors-primary, #e1e1fb);
   background: var(--light-base-color-white, #fff);
 }
 
@@ -565,7 +565,7 @@ a {
 }
 
 button.submit-button {
-  width: 100%; /* Account for padding */
+  width: calc(100% - 20px); /* Account for padding */
   padding: 10px;
   background-color: #f36326; /* Match the button color in the image */
   color: white;

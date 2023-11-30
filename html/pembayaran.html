@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/pembayaran.css">
-<link rel="stylesheet" href="../css/header.css">
-<link rel="stylesheet" href="../css/footer.css">
-<title>Ticket Details</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/pembayaran.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Ticket Details</title>
+  </head>
 
-<body>
-      <!-- Header -->
-      <div id="nav-placeholder"></div>
-      <!-- Akhir Header -->
-<div class="container">
-    <div class="container1">
-    <div class="detail-heading">Detail</div>
-    <div class="detail-item">
-      <label for="from">Dari</label>
-      <span id="from">Bandung</span>
-      <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+  <body>
+    <!-- Header -->
+    <div id="nav-placeholder"></div>
+    <!-- Akhir Header -->
+    <div class="content-1">
+        <div class="container-pembayaran">
+            <div class="container-kiri">
+                <div class="detail-heading">Detail</div>
+                <div class="detail-item">
+                <label for="from">Dari</label>
+                <span id="from">Bandung</span>
+                <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                </div>
+                <div class="detail-item">
+                <label for="to">Ke</label>
+                <span id="to">Jepara</span>
+                <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                </div>
+                <div class="detail-item">
+                <label for="date">Date</label>
+                <span id="date">14/02/2021</span>
+                </div>
+                <div class="detail-item">
+                <label for="tickets">Tiket</label>
+                <span id="tickets">2</span>
+                </div>
+                <div class="detail-item">
+                <label for="price">Price</label>
+                <span id="price">Rp 360.000,00</span>
+                </div>
+            </div>
+            <div class="container-kanan">
+                <div class="payment-method">
+                    <div class="detail-heading">Detail Pembayaran</div>
+                    <label for="paymentMethod">Metode Pembayaran</label>
+                    <select id="paymentMethod" required>
+                        <option selected value="">pilih metode pembayaran</option>
+                        <option value="BCA">BCA (no. rekening: 2470012345)</option>
+                        <option value="BRI">BRI (no. rekening: 2470012345)</option>
+                        <option value="BNI">BNI (no. rekening: 2470012345)</option>
+                        <option value="Dana">Dana (088765543212)</option>
+                        <option value="Shopeepay">Shopeepay (088765543212)</option>
+                        <option value="Gopay">Gopay (088765543212)</option>
+                    </select>
+                </div>
+                <div class="payment-summary">
+                    <h3>Detail harga</h3>
+                    <p>Jumlah Tiket: <span id="ticket-amount">2</span></p>
+                    <p>Harga Tiket: Rp<span id="ticket-price">360.000,00</span></p>
+                    <p>Total Bayar: Rp<span id="total-payment">360.000,00</span></p>
+                </div>
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" id="agree-terms" name="agree-terms" />
+                        I have agreed to the rules, Terms and Conditions.
+                    </label>
+                </div>
+                <div class="terms">
+                </div>
+                <button type="button" id="openPopup" onclick="location.href='popup-payment.html'">Bayar</button>
+              </form>
+            </div>
+        </div>
     </div>
-    <div class="detail-item">
-      <label for="to">Ke</label>
-      <span id="to">Jepara</span>
-      <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
-    </div>
-    <div class="detail-item">
-      <label for="date">Date</label>
-      <span id="date">14/02/2021</span>
-    </div>
-    <div class="detail-item">
-      <label for="tickets">Tiket</label>
-      <span id="tickets">2</span>
-    </div>
-    <div class="detail-item">
-      <label for="price">Price</label>
-      <span id="price">Rp 360.000,00</span>
-    </div>
-  </div>
-  <!-- <div>
-  <button class="button button-edit">edit</button>
-  </div> -->
-  <form id="payment-form">
-    <section class="payment-method">
-        <h2><center> Detail Pembayaran</center></h2>
-        <label for="paymentMethod">Metode Pembayaran</label>
-        <select id="paymentMethod">
-          <option selected value="" >pilih metode pembayaran</option>
-          <option value="BCA">BCA (no. rekening: 2470012345)</option>
-          <option value="BRI">BRI (no. rekening: 2470012345)</option>
-          <option value="BNI">BNI (no. rekening: 2470012345)</option>
-          <option value="Dana">Dana (088765543212)</option>
-          <option value="Shopeepay">Shopeepay (088765543212)</option>
-          <option value="Gopay">Gopay (088765543212)</option>
-        </select>
-    </section>
     
-  
-    <section class="payment-summary">
-        <h3>Detail harga</h3>
-        <p>Jumlah Tiket: <span id="ticket-amount">2</span></p>
-        <p>Harga Tiket: Rp<span id="ticket-price">360.000,00</span></p>
-        <p>Total Bayar: Rp<span id="total-payment">360.000,00</span></p>
-    </section>
-  
-    <div class="terms">
-        <label>
-            <input type="checkbox" id="agree-terms" name="agree-terms">
-            I have agreed to the rules, Terms and Conditions.
-        </label>
-    </div>
-    <button type="button" id="openPopup" onclick="location.href='popup-payment.html'">Bayar</button>
-  </form>
-</div>
     <!-- Footer -->
-    <div id="foot-placeholder"></div>    
+    <div id="foot-placeholder"></div>
     <!-- Akhir Footer -->
     <script src="../js/script.js"></script>
-
-</body>
+  </body>
 </html>
