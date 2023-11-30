@@ -11,7 +11,7 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #FCDCCF;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,6 +58,7 @@
   margin-left: 80px;
   margin-right: 80px;
   padding-top: 0;
+  justify-content: center;
 }
 .column {
   width: 100%;
@@ -162,7 +163,7 @@
   }
   .column {
     flex: 0 0 33.33%;
-    max-width: 33.33%;
+    max-width: 32.33%;
     padding: 0 1em;
   }
 }
