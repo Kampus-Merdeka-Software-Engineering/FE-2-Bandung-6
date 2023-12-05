@@ -13,6 +13,8 @@ body {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  margin: 24px;
+  padding: 20px;
 }
 
 /* tagline atas */
@@ -51,8 +53,8 @@ body {
 .img2,
 .img3 {
   position: absolute;
-  width: 40%;
-  height: 50%;
+  width: 500px;
+  height: 400px;
   border-radius: 15px;
 }
 .img1 {
@@ -193,7 +195,7 @@ body {
 .destination-card {
   display: flex;
   height: 330px;
-  padding: 5px;
+  padding: 3px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
@@ -372,7 +374,7 @@ a {
   margin-bottom: 10px; /* Consistent margin for all input/select */
 }
 button.submit-button {
-  width: calc(100% - 20px); /* Account for padding */
+  width: 350px; /* Account for padding */
   padding: 10px;
   background-color: #f36326; /* Match the button color in the image */
   color: white;

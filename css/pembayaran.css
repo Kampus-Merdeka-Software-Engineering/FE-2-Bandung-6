@@ -24,25 +24,10 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
-.detail-item {
-  margin-bottom: 10px;
-}
-.detail-item label {
-  font-weight: bold;
-  display: block;
-}
-.detail-item span {
-  display: block;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 1mm;
-  padding: 5px;
-}
 .input-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 .input-group label {
   margin-bottom: 5px;
