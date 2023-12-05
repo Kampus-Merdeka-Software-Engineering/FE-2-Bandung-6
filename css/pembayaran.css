@@ -4,7 +4,6 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 * {
-  margin: 0;
   padding: 0;
 }
 
@@ -36,7 +35,38 @@ body {
 .detail-item span {
   display: block;
   margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 1mm;
+  padding: 5px;
 }
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input-group label {
+  margin-bottom: 5px;
+}
+.input-group2 input {
+  height: 20px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2mm;
+}
+.input-group input {
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2mm;
+}
+
 .button {
   display: block;
   width: 100%;
@@ -154,6 +184,9 @@ input[type="file"] {
 .detail-item span {
   display: block;
   margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 1mm;
+  padding: 5px;
 }
 .button {
   display: block;

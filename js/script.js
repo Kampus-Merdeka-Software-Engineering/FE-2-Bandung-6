@@ -269,3 +269,17 @@ function setupFileUpload() {
 
 // Export fungsi setupFileUpload agar bisa dipanggil dari luar
 window.setupFileUpload = setupFileUpload;
+
+// pembayaran
+function showLoading(event, button) {
+  event.preventDefault();
+  button.innerHTML = "Memproses pembayaran...";
+
+  setTimeout(function () {
+    button.innerHTML = "Pembayaran dikonfirmasi";
+
+    setTimeout(function () {
+      window.location.href = "/index.html";
+    }, 3000);
+  }, 3000);
+}
