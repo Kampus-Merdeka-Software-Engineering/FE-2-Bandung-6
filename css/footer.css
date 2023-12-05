@@ -3,25 +3,21 @@ body {
   font-family: 'Mulish', sans-serif;
 
 }
-
 .row-footer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-
 .row2 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-
 ul {
   list-style: none;
   padding: 5px 5px;
   margin: initial;
 }
-
 .footer {
   align-items: center;
   margin-top: 20px;
@@ -38,19 +34,16 @@ ul {
   gap: 30px;
   background-color: #ffffff;
 }
-
 .footer-col {
   display: flex;
   flex-direction: column;
   margin: 10px 10px 10px 10px;
 }
-
 .foot-left img {
   margin-bottom: 20px ;
   margin-top: 20px;
   width: 134px;
 }
-
 .footer-col h4 {
   margin-top: 10px;
   font-size: 18px;
@@ -74,7 +67,6 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
-
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
@@ -87,12 +79,10 @@ ul {
   font-weight: 400;
   letter-spacing: 0.08px;
 }
-
 .social-links {
   display: flex;
   flex-direction: column;
 }
-
 .social-links a {
   width: 100%;
   display: flex;
@@ -102,7 +92,6 @@ ul {
   color: black;
   transition: all 0.5s ease;
 }
-
 /*responsive*/
 @media (max-width: 970px) {
   .footer-col {

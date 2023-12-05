@@ -28,7 +28,6 @@ body {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
   }
-
   .modal-content {
     background-color: #fff;
     margin: 10% auto;
@@ -46,7 +45,6 @@ body {
     font-size: 28px;
     font-weight: bold;
   }
-
   .close:hover,
   .close:focus {
     color: #000;
@@ -62,13 +60,11 @@ body {
     border-bottom: 1px solid #eaeaea;
     padding-bottom: 10px;
   }
-
   label {
     display: block;
     margin-top: 5px;
     color: #666;
   }
-
   select {
     width: 100%;
     padding: 10px;
@@ -83,7 +79,6 @@ body {
     border-radius: 5px;
     padding: 10px;
 }
-
   .file-upload-label {
     display: block;
     border: none;
@@ -99,11 +94,9 @@ body {
   }
 
   /* Style adjustments for the file input button */
-
   input[type='file'] {
     display: none;
   }
-
   .submit-btn {
     background-color: #f36326;
     color: #333;
@@ -115,7 +108,6 @@ body {
     width: 100%;
     box-sizing: border-box; /* Ensures padding doesn't affect width */
   }
-
   .submit-btn:hover {
     background-color: #ffbea9;
   }

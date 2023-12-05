@@ -9,7 +9,6 @@ body {
 }
 
 /* dropdown */
-
 .flex-jadwal {
   margin-top: 200px;
   box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
@@ -124,6 +123,7 @@ body {
   color: #ffff;
   background-color: #ed5c01;
 }
+
 /* Dropdown */
 .dropbtn {
   cursor: pointer;
@@ -132,7 +132,6 @@ body {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -142,19 +141,16 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 .dropdown a:hover {
   background-color: #fcdccf;
   color: #f36326;
 }
-
 .show {
   display: block;
 }
@@ -167,7 +163,6 @@ body {
     margin-left: 5px;
     margin-right: 5px;
   }
-
   .bar p {
     margin-top: 5px;
     color: #9a9ab0;
@@ -185,7 +180,6 @@ body {
   .flex-jadwal {
     width: auto;
     margin-left: 20px;
-    
   }
 }
 
@@ -194,7 +188,6 @@ body {
     width: auto;
     margin-left: 20px;
     margin-right: 50px;
-    
   }
 }
 

@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let awalanDitambahkan = false;
 
   // Tambahkan event listener untuk mendeteksi perubahan nilai pada input nomor telepon
-  phoneInput.addEventListener('input', function () {
+  phoneInput.addEventListener('input',function () {
     if (!awalanDitambahkan) {
       // Dapatkan nilai nomor telepon
       const phoneNumber = phoneInput.value;
