@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap");
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 * {
   margin: 0;
@@ -40,28 +40,29 @@ body {
   font-size: 16px;
   font-weight: 600;
 }
-.row {
+.container5 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.members {
   display: flex;
   text-align: center;
   margin-left: 80px;
   margin-right: 80px;
   justify-content: space-between;
-  /* justify-content: center; */
-}
-.column {
-  margin-bottom: 100px;
-  width: 100px;
-  flex-basis: calc(33.33% - 20px);
+  flex-wrap: wrap;
+  max-width: 1200px;
 }
 .card {
   box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
   border-radius: 0.6em;
   color: black;
   cursor: pointer;
-  transition: 0.3s;
   width: 300px;
   background-color: #fff;
-  height: 10px;
+  margin-bottom: 20px;
+  padding: 3em 1em;
 }
 .card .img-container {
   width: 8em;
@@ -141,15 +142,6 @@ body {
 @media screen and (min-width: 992px) {
   section {
     padding: 1em;
-  }
-  .card {
-    padding: 3em 1em;
-    height: 90%;
-  }
-  .column {
-    flex: 0 0 33.33%;
-    max-width: 32.33%;
-    padding: 0 1em;
   }
 }
 
