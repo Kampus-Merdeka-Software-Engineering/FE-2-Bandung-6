@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .container2 {
   font-size: 20px;
   gap: 20px;
@@ -29,7 +28,6 @@ body {
 .container4 h1 {
   color: #ed5c01;
 }
-
 .container2 p {
   margin-top: 10px;
   color: #717171;
@@ -42,7 +40,6 @@ body {
   font-size: 16px;
   font-weight: 600;
 }
-
 .row {
   display: flex;
   text-align: center;
@@ -114,18 +111,15 @@ body {
   position: relative;
   margin: auto;
 }
-
 .mySlides {
   display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
 }
-
 .mySlides img {
   flex: 33.33%; /* Membagi ruang horizontal dalam tiga bagian */
   max-width: 33.33%;
   margin: 4px;
   border-radius: 8px;
 }
-
 .dot {
   height: 8px;
   width: 8px;
@@ -134,7 +128,6 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active {
   background-color: #717171;
 }
@@ -167,7 +160,6 @@ body {
     max-width: 50%;
   }
 }
-
 @media screen and (max-width: 768px) {
   .mySlides img {
     flex: 50%; /* Change to two columns at 768px */
@@ -175,7 +167,6 @@ body {
     min-width: 100px; /* Set a minimum width for the images at 768px */
   }
 }
-
 @media screen and (max-width: 468px) {
   .mySlides img {
     flex: 100%; /* Change to one column at 468px */

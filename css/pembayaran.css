@@ -4,10 +4,8 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 * {
-  margin: 0;
   padding: 0;
 }
-
 .container {
   display: flex;
   justify-content: center;
@@ -36,6 +34,36 @@ body {
 .detail-item span {
   display: block;
   margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 1mm;
+  padding: 5px;
+}
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input-group label {
+  margin-bottom: 5px;
+}
+.input-group2 input {
+  height: 20px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2mm;
+}
+.input-group input {
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2mm;
 }
 .button {
   display: block;
@@ -66,28 +94,23 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .payment-method,
 .payment-summary {
   margin-bottom: 20px;
 }
-
 .payment-method h2,
 .payment-summary h2 {
   margin-bottom: 10px;
   color: #333;
 }
-
 .bank-selection label,
 .e-wallet-selection label {
   display: block;
   margin-bottom: 5px;
 }
-
 .terms {
   margin: 20px 0;
 }
-
 button {
   width: 100%;
   padding: 15px;
@@ -98,7 +121,6 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
-
 button:hover {
   background: #f36326b3;
 }
@@ -113,7 +135,6 @@ button:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
@@ -121,7 +142,6 @@ button:hover {
   border: 1px solid #888;
   width: 80%;
 }
-
 .close {
   color: #aaa;
   float: right;
@@ -129,14 +149,13 @@ button:hover {
   font-weight: bold;
   cursor: pointer;
 }
-
 .close:hover {
   color: black;
 }
-
 input[type="file"] {
   margin-bottom: 10px;
 }
+
 /* detail */
 .detail-heading {
   font-size: 24px;
@@ -154,6 +173,9 @@ input[type="file"] {
 .detail-item span {
   display: block;
   margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 1mm;
+  padding: 5px;
 }
 .button {
   display: block;
@@ -172,7 +194,6 @@ select#paymentMethod {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-
 .container-pembayaran{
   display: flex;
   justify-content: space-between;
@@ -186,18 +207,17 @@ select#paymentMethod {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 120px 0;
 }
-
 .container-kiri{
   border-right: 1px solid #ddd;
   padding-right: 20px;
   margin-right: 20px;
 }
-
 .content-1{
   display: flex;
   justify-content: center;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   .container {
     width: 95%;

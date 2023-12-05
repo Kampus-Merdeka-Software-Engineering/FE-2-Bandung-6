@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let awalanDitambahkan = false;
 
   // Tambahkan event listener untuk mendeteksi perubahan nilai pada input nomor telepon
-  phoneInput.addEventListener('input', function () {
+  phoneInput.addEventListener('input',function () {
     if (!awalanDitambahkan) {
       // Dapatkan nilai nomor telepon
       const phoneNumber = phoneInput.value;
@@ -269,3 +269,17 @@ function setupFileUpload() {
 
 // Export fungsi setupFileUpload agar bisa dipanggil dari luar
 window.setupFileUpload = setupFileUpload;
+
+// pembayaran
+function showLoading(event, button) {
+  event.preventDefault();
+  button.innerHTML = "Memproses pembayaran...";
+
+  setTimeout(function () {
+    button.innerHTML = "Pembayaran dikonfirmasi";
+
+    setTimeout(function () {
+      window.location.href = "/index.html";
+    }, 3000);
+  }, 3000);
+}
