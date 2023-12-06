@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Header</title>
     <link rel="stylesheet" type="text/css" href="../css/explore.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <style>
+      .flatpickr-calendar {
+        position: absolute !important;
+        margin-top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+      }
+    </style>
   </head>
+
   <body>
     <!-- Navbar start -->
     <div id="nav-placeholder"></div>
@@ -19,184 +31,46 @@
         <div class="bar-2">
           <label for="location">Start Location</label>
           <div class="dropdown">
-            <img
-              src="../image/icons/dropdown.png"
-              alt=""
-              onclick="toggleDropdown('myDropdown')"
-              class="dropbtn"
-            />
+            <img src="../image/icons/dropdown.png" alt="" onclick="toggleDropdown('myDropdown')" class="dropbtn" />
             <div id="myDropdown" class="dropdown-content">
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Surabaya', 'selecteDropdown')"
-                >Surabaya</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Malang', 'selecteDropdown')"
-                >Malang</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Kediri', 'selecteDropdown')"
-                >Kediri</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Mojokerto', 'selecteDropdown')"
-                >Mojokerto</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Jember', 'selecteDropdown')"
-                >Jember</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Madiun', 'selecteDropdown')"
-                >Madiun</a
-              >
+              <a href="javascript:void(0);" onclick="selectdropdown('Surabaya', 'selecteDropdown')">Surabaya</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Malang', 'selecteDropdown')">Malang</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Kediri', 'selecteDropdown')">Kediri</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Mojokerto', 'selecteDropdown')">Mojokerto</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Jember', 'selecteDropdown')">Jember</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Madiun', 'selecteDropdown')">Madiun</a>
             </div>
           </div>
         </div>
-        <p id="selecteDropdown">Lokasi Awal</p>
+        <p id="selecteDropdown"></p>
       </div>
       <div class="bar">
         <div class="bar-2">
           <label for="location">End Location</label>
           <div class="dropdown">
-            <img
-              src="../image/icons/dropdown.png"
-              alt=""
-              onclick="toggleDropdown('myDropdown2')"
-              class="dropbtn"
-            />
+            <img src="../image/icons/dropdown.png" alt="" onclick="toggleDropdown('myDropdown2')" class="dropbtn" />
             <div id="myDropdown2" class="dropdown-content">
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Surabaya', 'selecteDropdown2')"
-                >Surabaya</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Malang', 'selecteDropdown2' )"
-                >Malang</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Kediri', 'selecteDropdown2')"
-                >Kediri</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Mojokerto', 'selecteDropdown2')"
-                >Mojokerto</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Jember', 'selecteDropdown2' )"
-                >Jember</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Madiun', 'selecteDropdown2')"
-                >Madiun</a
-              >
+              <a href="javascript:void(0);" onclick="selectdropdown('Surabaya', 'selecteDropdown2')">Surabaya</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Malang', 'selecteDropdown2' )">Malang</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Kediri', 'selecteDropdown2')">Kediri</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Mojokerto', 'selecteDropdown2')">Mojokerto</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Jember', 'selecteDropdown2' )">Jember</a>
+              <a href="javascript:void(0);" onclick="selectdropdown('Madiun', 'selecteDropdown2')">Madiun</a>
             </div>
           </div>
         </div>
-        <p id="selecteDropdown2">Lokasi Akhir</p>
+        <p id="selecteDropdown2"></p>
       </div>
       <div class="bar">
         <div class="bar-2">
           <label for="date">Date</label>
           <div class="dropdown">
-            <img
-              src="../image/icons/dropdown.png"
-              alt=""
-              onclick="toggleDropdown('myDropdown3')"
-              class="dropbtn"
-            />
-            <div id="myDropdown3" class="dropdown-content">
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Surabaya' , 'selecteDropdown3')"
-                >Surabaya</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Malang' , 'selecteDropdown3')"
-                >Malang</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Kediri', 'selecteDropdown3')"
-                >Kediri</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Mojokerto' , 'selecteDropdown3')"
-                >Mojokerto</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Jember' , 'selecteDropdown3')"
-                >Jember</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Madiun', 'selecteDropdown3')"
-                >Madiun</a
-              >
-            </div>
+            <img src="../image/icons/dropdown.png" alt="" onclick="openCalendar()" class="dropbtn" />
+            <input type="text" id="tanggalBerangkat" class="form-control" name="tanggalBerangkat" style="display: none; border: none" required />
           </div>
         </div>
-        <p id="selecteDropdown3">Tanggal</p>
+        <p id="selecteDropdown3"></p>
       </div>
-      <div class="bar">
-        <div class="bar-2">
-          <label for="people">Tiket</label>
-          <div class="dropdown">
-            <img
-              src="../image/icons/dropdown.png"
-              alt=""
-              onclick="toggleDropdown('myDropdown4')"
-              class="dropbtn"
-            />
-            <div id="myDropdown4" class="dropdown-content">
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Surabaya' , 'selecteDropdown3')"
-                >Surabaya</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Malang' , 'selecteDropdown3')"
-                >Malang</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Kediri', 'selecteDropdown3')"
-                >Kediri</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Mojokerto' , 'selecteDropdown3')"
-                >Mojokerto</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Jember' , 'selecteDropdown3')"
-                >Jember</a
-              >
-              <a
-                href="javascript:void(0);"
-                onclick="selectdropdown('Madiun', 'selecteDropdown3')"
-                >Madiun</a
-              >
-            </div>
-          </div>
-        </div>
       <div class="bar">
         <div class="button-explore">
           <a href="" class="explore">Jelajah</a>
