@@ -27,6 +27,7 @@ function toggleDropdown(dropdownId) {
   // Kemudian tampilkan dropdown yang sesuai
   dropdown.classList.toggle('show');
 }
+
 function selectdropdown(answer, elementId) {
   const selectedElement = document.getElementById(elementId);
   selectedElement.textContent = answer;
