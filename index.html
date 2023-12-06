@@ -222,17 +222,18 @@
               </select>
             </div>
             <!-- Jumlah Orang -->
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="jumlahOrang">Jumlah Tiket:</label>
               <input type="number" id="jumlahOrang" class="form-control" name="jumlahOrang" placeholder="4" required />
-            </div>
+            </div> -->
             <!-- Tanggal Berangkat -->
             <div class="form-group">
               <label for="tanggalBerangkat">Tgl berangkat:</label>
               <input type="date" id="tanggalBerangkat" class="form-control" name="tanggalBerangkat" required />
+              <div class="text-red" id="tanggalError"></div>
             </div>
             <!-- Submit Button -->
-            <button type="submit" class="submit-button">Lihat Jadwal</button>
+            <button type="submit" class="submit-button" onclick="location.href='./html/explore.html'">Lihat Jadwal</button>
           </form>
         </div>
       </div>
@@ -382,5 +383,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/validation.js"></script>
   </body>
 </html>
