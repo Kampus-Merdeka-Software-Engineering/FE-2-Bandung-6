@@ -12,7 +12,7 @@ function toggleDropdown(dropdownId) {
   const dropdown = document.getElementById(dropdownId);
 
   // Ambil daftar semua dropdown yang ada
-  const allDropdowns = ['myDropdown', 'myDropdown2', 'myDropdown3', 'myDropdown4'];
+  const allDropdowns = ['myDropdown', 'myDropdown2'];
 
   // Sembunyikan dropdown lainnya jika terbuka
   allDropdowns.forEach(function (otherId) {
@@ -27,6 +27,31 @@ function toggleDropdown(dropdownId) {
   // Kemudian tampilkan dropdown yang sesuai
   dropdown.classList.toggle('show');
 }
+flatpickr("#tanggalBerangkat", {
+  altFormat: "F j, Y",
+  dateFormat: "Y-m-d",
+  onClose: function(selectedDates, dateStr, instance) {
+    // Update hanya jika kalender ditutup dengan pemilihan tanggal
+    if (selectedDates.length > 0) {
+      updateDropdownText(dateStr);
+      // Sembunyikan kalender setelah memilih tanggal
+      instance.close();
+    }
+  }
+});
+
+function openCalendar() {
+  var dateInput = document.getElementById("tanggalBerangkat");
+
+  // Buka kalender secara otomatis
+  dateInput.click();
+}
+
+function updateDropdownText(selectedDate) {
+  var dropdownText = document.getElementById("selecteDropdown3");
+  dropdownText.textContent = selectedDate;
+};
+
 
 function selectdropdown(answer, elementId) {
   const selectedElement = document.getElementById(elementId);
@@ -76,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let awalanDitambahkan = false;
 
   // Tambahkan event listener untuk mendeteksi perubahan nilai pada input nomor telepon
-  phoneInput.addEventListener('input',function () {
+  phoneInput.addEventListener('input', function () {
     if (!awalanDitambahkan) {
       // Dapatkan nilai nomor telepon
       const phoneNumber = phoneInput.value;
@@ -274,26 +299,26 @@ window.setupFileUpload = setupFileUpload;
 // pembayaran
 function showLoading(event, button) {
   event.preventDefault();
-  button.innerHTML = "Memproses pembayaran...";
+  button.innerHTML = 'Memproses pembayaran...';
 
   setTimeout(function () {
-    button.innerHTML = "Pembayaran dikonfirmasi";
+    button.innerHTML = 'Pembayaran dikonfirmasi';
 
     setTimeout(function () {
-      window.location.href = "/index.html";
+      window.location.href = '/index.html';
     }, 3000);
   }, 3000);
 }
-// validasi number 
+// validasi number
 document.getElementById('phone').addEventListener('input', function () {
   var phoneInput = this.value;
   var phoneError = document.getElementById('phoneError');
 
   // Menggunakan regular expression untuk memeriksa apakah input hanya berisi angka
   if (!/^[0-9]+$/.test(phoneInput)) {
-      phoneError.textContent = 'Hanya angka yang diperbolehkan';
+    phoneError.textContent = 'Hanya angka yang diperbolehkan';
   } else {
-      phoneError.textContent = ''; // Hapus pesan kesalahan jika input valid
+    phoneError.textContent = ''; // Hapus pesan kesalahan jika input valid
   }
 });
 // // validasi email
