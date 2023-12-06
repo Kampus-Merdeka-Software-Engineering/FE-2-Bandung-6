@@ -10,10 +10,10 @@ body {
 
 /* dropdown */
 .flex-jadwal {
-  margin-top: 200px;
+  margin-top: 150px;
   box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-left: 250px;
+  margin-right: 250px;
   align-items: center;
   margin-bottom: 300px;
   display: flex;
@@ -21,17 +21,22 @@ body {
 /* FLEXBOX JADWAL */
 .flex-jadwal > .bar {
   padding: 40px;
-  margin: 0px 15px 0px 15px;
+  padding-left: 60px;
+  margin: 0px 20px 0px 20px;
   color: #000;
   text-align: center;
   font-size: 17px;
   height: 30px;
+}
+.hidden {
+  display: none !important;
 }
 .bar p {
   margin-top: 5px;
   color: #9a9ab0;
 }
 .button-explore {
+  margin-top: -10px;
   display: flex;
   position: absolute;
 }
@@ -41,6 +46,7 @@ body {
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
+  letter-spacing: 0.5px;
 }
 .explore:hover {
   color: #ffff;
