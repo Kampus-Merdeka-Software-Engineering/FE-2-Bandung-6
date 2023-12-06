@@ -283,3 +283,15 @@ function showLoading(event, button) {
     }, 3000);
   }, 3000);
 }
+// validasi number 
+document.getElementById('phone').addEventListener('input', function () {
+  var phoneInput = this.value;
+  var phoneError = document.getElementById('phoneError');
+
+  // Menggunakan regular expression untuk memeriksa apakah input hanya berisi angka
+  if (!/^[0-9]+$/.test(phoneInput)) {
+      phoneError.textContent = 'Hanya angka yang diperbolehkan';
+  } else {
+      phoneError.textContent = ''; // Hapus pesan kesalahan jika input valid
+  }
+});
