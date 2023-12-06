@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 * {
   margin: 0;
@@ -150,8 +150,12 @@ body {
 .location-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  margin-left: 10px;
+  margin-top: 2px;
   gap: 16px;
+}
+.alamat-text {
+  margin-left: 10px;
 }
 
 .location-container h4 {
@@ -167,14 +171,25 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
+.destination-img{
+  display: flex;
+  justify-content: center;
+}
+.destination-img img{
+  padding: 5px;
+}
 
 .btn-destination {
+  cursor: pointer;
   display: flex;
-  width: 365px;
-  height: 56px;
-  padding: 18px 24px;
+  float: left;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 50px;
+  margin-bottom: 20px;
+  text-align: center;
   gap: 10px;
   border-radius: 8px;
   background: var(--light-secondary-color-10, #fcdccf);
@@ -193,11 +208,10 @@ body {
   font-size: 40px;
 }
 .destination-card {
-  display: flex;
-  height: 330px;
-  padding: 3px;
+  display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 10px;
   border-radius: 12px;
   border: 3px solid var(--light-separators-colors-primary, #e1e1fb);
