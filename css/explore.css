@@ -15,7 +15,7 @@ body {
   margin-left: 250px;
   margin-right: 250px;
   align-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 50px;
   display: flex;
 }
 /* FLEXBOX JADWAL */
@@ -54,11 +54,11 @@ body {
 }
 /* FLEX JADWAL 2 */
 .flex-jadwal-2 {
-  margin-top: 50px;
   margin-left: 50px;
   box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
   width: 1400px;
   display: flex;
+  margin-bottom: 40px;
 }
 .flex-jadwal-2 > .barr {
   padding: 40px;
@@ -196,102 +196,3 @@ body {
     margin-right: 50px;
   }
 }
-
-/* Footer */
-
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.row2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-ul {
-  list-style: none;
-}
-.footer {
-  background-color: white;
-  margin: 60px 90px 0px 100px;
-  padding: 30px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  gap: 20px;
-}
-
-.foot-left {
-  width: 30%;
-}
-
-.foot-left img {
-  width: 134px;
-}
-
-.footer-col h4 {
-  font-size: 18px;
-  color: black;
-  text-transform: capitalize;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer-col ul li a {
-  color: var(--light-text-color-body-1, #515151);
-  font-size: 16px;
-  text-transform: capitalize;
-  color: black;
-  text-decoration: none;
-  font-weight: 300;
-  color: black;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
-}
-.row2 p {
-  text-align: center;
-  color: var(--light-text-color-body-1, #515151);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.08px;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.social-links a {
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin: 0 10px 10px 0;
-  color: black;
-  transition: all 0.5s ease;
-}
-
-/*responsive*/
-
-/* @media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
-  }
-} */
