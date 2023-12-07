@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <link rel="stylesheet" href="../css/detail_penumpang.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet" />
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <title>Formulir Penumpang</title>
   </head>
   <body>
@@ -18,7 +20,7 @@
     <!-- Akhir Header -->
     <div class="container">
       <div class="contact-details">
-        <div class="detail-heading">Tempat Tujuan</div>
+        <div class="detail-heading"><h3>Detail Penumpang</h3></div>
         <div class="detail-destination">
           <img src="../image/destination/kediri.png" alt="" />
           <h4>Surabaya</h4>
@@ -49,14 +51,15 @@
             <span>8 Kursi</span>
           </div>
         </div>
-
       </div>
       <div class="contact-details">
-        <div class="detail-heading">Detail Penumpang</div>
-        <form>
+        <div class="detail-heading">
+          <h3>Detail Penumpang</h3>
+        </div>
+        <form id="bookingForm">
           <div class="input-group">
             <label for="nama">Nama Lengkap</label>
-            <input type="nama" id="nama" name="nama" placeholder="Masukkan nama lengkap anda ..." required />
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap anda ..." required />
           </div>
           <div class="input-group">
             <label for="email">Alamat Email</label>
@@ -64,30 +67,28 @@
           </div>
           <div class="input-group">
             <label for="phone">No Telepon</label>
-               <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon anda..." required />
-              <small id="phoneError" style="color: red;"></small>
+            <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon anda..." required />
+            <small id="phoneError" style="color: red"></small>
           </div>
           <div class="input-group">
             <label for="address">Alamat</label>
-            <input type="textarea" id="address" name="address" placeholder="Masukkan alamat anda..." required />
+            <input type="text" id="address" name="address" placeholder="Masukkan alamat anda..." required />
           </div>
           <div class="input-group">
             <label for="tiket">Total Tiket</label>
-            <input type="textarea" id="tiket" name="tiket" placeholder="Jumlah Tiket" required />
+            <input type="number" id="tiket" name="tiket" placeholder="Jumlah Tiket" required />
           </div>
           <div class="input-group">
-            <label date="date">Tanggal</label>
-            <input type="date" id="date" name="date" required/ >
+            <label for="date">Tanggal</label>
+            <input type="text" id="date" name="date" placeholder="yyyy-mm-dd" required />
             <div id="tanggalError" class="text-red"></div>
           </div>
           <div class="input-group">
             <label for="keterangan">Keterangan</label>
-            <input type="textarea" id="ket" name="keterangan" placeholder="Keterangan" />
-        </div>
+            <input type="text" id="ket" name="keterangan" placeholder="Keterangan" />
+          </div>
           <div class="button">
-            <a href="pembayaran.html">
-              <button class = "submit-btn">Lanjutkan
-              </a>
+            <button class="submit-btn" onclick="submitForm()">Booking</button>
           </div>
         </form>
       </div>
@@ -101,6 +102,7 @@
     <!-- Link JS -->
     <script src="../js/script.js"></script>
     <script src="../js/detail_penumpang.js"></script>
+    <script src="../js/data_penumpang.js"></script>
     <!-- Batas -->
   </body>
 </html>
