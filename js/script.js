@@ -1,3 +1,42 @@
+// const API_BASE_URL = 'http://localhost:3001';
+
+// document.addEventListener('DOMContentLoaded', async () => {
+//   if (window.location.pathname.includes('city.html')) {
+//     await fetchAllKota('kota-container-1');
+//   }
+// });
+// async function fetchAllKota(containerId) {
+//   try {
+//     const response = await fetch(`${API_BASE_URL}/kota/api/getkota`);
+//     const data = await response.json();
+
+//     const kotaContainer = document.getElementById(containerId);
+
+//     data.forEach((kota) => {
+//       const kotaElement = document.createElement('div');
+//       kotaElement.classList.add('location');
+//       kotaElement.dataset.name = kota.kota_asal_travel;
+
+//       kotaElement.innerHTML = `
+//         <h2>${kota.kota_asal_travel}</h2>
+//         <img src="${kota.gambar_travel}" alt="profile" />
+//         <div class="address">
+//           <i class="material-icons"><img src="../image/icons/location_on.svg" alt="location" /></i>
+//           ${kota.alamat_travel}
+//         </div>
+//         <div class="telepon">
+//           <i class="material-icons"><img src="../image/icons/telepon.png" alt="telepon" /></i>
+//           <span>${kota.no_telepon_travel}</span>
+//         </div>
+//       `;
+
+//       kotaContainer.appendChild(kotaElement);
+//     });
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//   }
+// }
+
 // Header
 function toggleMenu() {
   const menuList = document.getElementById('menu-list');
@@ -6,7 +45,7 @@ function toggleMenu() {
   menuList.classList.toggle('show');
   menuExtra.classList.toggle('show');
 }
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
 function toggleDropdown(dropdownId) {
   const dropdown = document.getElementById(dropdownId);
@@ -27,36 +66,35 @@ function toggleDropdown(dropdownId) {
   // Kemudian tampilkan dropdown yang sesuai
   dropdown.classList.toggle('show');
 }
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function () {
   initializeFlatpickr();
 });
 function initializeFlatpickr() {
-  flatpickr("#tanggalBerangkat", {
-    altFormat: "F j, Y",
-    dateFormat: "Y-m-d",
-    onClose: function(selectedDates, dateStr, instance) {
+  flatpickr('#tanggalBerangkat', {
+    altFormat: 'F j, Y',
+    dateFormat: 'Y-m-d',
+    onClose: function (selectedDates, dateStr, instance) {
       // Update hanya jika kalender ditutup dengan pemilihan tanggal
       if (selectedDates.length > 0) {
         updateDropdownText(dateStr);
         // Sembunyikan kalender setelah memilih tanggal
         instance.close();
       }
-    }
+    },
   });
 }
 
 function openCalendar() {
-  var dateInput = document.getElementById("tanggalBerangkat");
+  var dateInput = document.getElementById('tanggalBerangkat');
 
   // Buka kalender secara otomatis
   dateInput.click();
 }
 
 function updateDropdownText(selectedDate) {
-  var dropdownText = document.getElementById("selecteDropdown3");
+  var dropdownText = document.getElementById('selecteDropdown3');
   dropdownText.textContent = selectedDate;
 }
-
 
 function selectdropdown(answer, elementId) {
   const selectedElement = document.getElementById(elementId);
@@ -131,6 +169,7 @@ function setupDropdowns() {
     let input = dropdown.querySelector('.input-box');
     input.onclick = function () {
       this.classList.toggle('open');
+
       let list = this.nextElementSibling;
       if (list.style.maxHeight) {
         list.style.maxHeight = null;
