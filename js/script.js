@@ -30,8 +30,6 @@ function toggleDropdown(dropdownId) {
 document.addEventListener("DOMContentLoaded", function() {
   initializeFlatpickr();
 });
-<<<<<<< HEAD
-
 function initializeFlatpickr() {
   flatpickr("#tanggalBerangkat", {
     altFormat: "F j, Y",
@@ -47,8 +45,6 @@ function initializeFlatpickr() {
   });
 }
 
-=======
->>>>>>> 95153d3d376f05192eb503bc138de3e14751878b
 function openCalendar() {
   var dateInput = document.getElementById("tanggalBerangkat");
 
