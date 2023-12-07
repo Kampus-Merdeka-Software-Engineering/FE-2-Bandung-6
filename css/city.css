@@ -21,9 +21,10 @@ body {
 }
 .container .location-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* Tiga kolom besar */
+  gap: 20px; /* Jarak antara kolom dan baris */
 }
+
 .container .location-container .location {
   text-align: center;
   padding: 1rem;
@@ -32,6 +33,7 @@ body {
   outline-offset: -1.5rem;
   cursor: pointer;
   border-radius: 1rem;
+  margin-bottom: 20px; /* Jarak antara lokasi */
 }
 .container .location-container .location:hover {
   outline-offset: 0;
