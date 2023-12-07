@@ -27,18 +27,24 @@ function toggleDropdown(dropdownId) {
   // Kemudian tampilkan dropdown yang sesuai
   dropdown.classList.toggle('show');
 }
-flatpickr("#tanggalBerangkat", {
-  altFormat: "F j, Y",
-  dateFormat: "Y-m-d",
-  onClose: function(selectedDates, dateStr, instance) {
-    // Update hanya jika kalender ditutup dengan pemilihan tanggal
-    if (selectedDates.length > 0) {
-      updateDropdownText(dateStr);
-      // Sembunyikan kalender setelah memilih tanggal
-      instance.close();
-    }
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  initializeFlatpickr();
 });
+
+function initializeFlatpickr() {
+  flatpickr("#tanggalBerangkat", {
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+    onClose: function(selectedDates, dateStr, instance) {
+      // Update hanya jika kalender ditutup dengan pemilihan tanggal
+      if (selectedDates.length > 0) {
+        updateDropdownText(dateStr);
+        // Sembunyikan kalender setelah memilih tanggal
+        instance.close();
+      }
+    }
+  });
+}
 
 function openCalendar() {
   var dateInput = document.getElementById("tanggalBerangkat");
@@ -50,7 +56,7 @@ function openCalendar() {
 function updateDropdownText(selectedDate) {
   var dropdownText = document.getElementById("selecteDropdown3");
   dropdownText.textContent = selectedDate;
-};
+}
 
 
 function selectdropdown(answer, elementId) {
