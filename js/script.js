@@ -30,6 +30,7 @@ function toggleDropdown(dropdownId) {
 document.addEventListener("DOMContentLoaded", function() {
   initializeFlatpickr();
 });
+<<<<<<< HEAD
 
 function initializeFlatpickr() {
   flatpickr("#tanggalBerangkat", {
@@ -46,6 +47,8 @@ function initializeFlatpickr() {
   });
 }
 
+=======
+>>>>>>> 95153d3d376f05192eb503bc138de3e14751878b
 function openCalendar() {
   var dateInput = document.getElementById("tanggalBerangkat");
 
@@ -63,6 +66,7 @@ function selectdropdown(answer, elementId) {
   const selectedElement = document.getElementById(elementId);
   selectedElement.textContent = answer;
 }
+// footer
 function loadFooter() {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
@@ -268,19 +272,16 @@ window.onload = function () {
     closeModal();
   });
 };
-
 // Modal index
 function openModal() {
   var modal = document.getElementById('modal');
   modal.style.display = 'block';
 }
-
 // Panggil fungsi ini untuk memulai slideshow
 document.addEventListener('DOMContentLoaded', function () {
   startSlideshow();
 });
 // popup
-
 function setupFileUpload() {
   const fileUploadInput = document.getElementById('file-upload');
   const fileUploadText = document.getElementById('file-upload-text');
@@ -298,7 +299,6 @@ function setupFileUpload() {
     fileUploadText.innerHTML = `Bukti Pembayaran: ${fileName}`;
   });
 }
-
 // Export fungsi setupFileUpload agar bisa dipanggil dari luar
 window.setupFileUpload = setupFileUpload;
 
@@ -327,48 +327,3 @@ document.getElementById('phone').addEventListener('input', function () {
     phoneError.textContent = ''; // Hapus pesan kesalahan jika input valid
   }
 });
-// // validasi email
-// document.getElementById('email').addEventListener('input', function () {
-//   var emailInput = this.value;
-//   var emailError = document.getElementById('emailError');
-
-//   // Menggunakan regular expression untuk memeriksa apakah input hanya berisi angka
-//   if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(emailInput)) {
-//       emailError.textContent = 'Format email salah';
-//   } else {
-//       emailError.textContent = ''; // Hapus pesan kesalahan jika input valid
-//   }
-// });
-// // validasi nama
-// document.getElementById('name').addEventListener('input', function () {
-//   var nameInput = this.value;
-//   var nameError = document.getElementById('nameError');
-
-//   // Menggunakan regular expression untuk memeriksa apakah input hanya berisi angka
-//   if (!/^[a-zA-Z ]+$/.test(nameInput)) {
-//       nameError.textContent = 'Hanya huruf yang diperbolehkan';
-//   } else {
-//       nameError.textContent = ''; // Hapus pesan kesalahan jika input valid
-//   }
-// });
-// // validasi tanggal
-// document.getElementById('date').addEventListener('input', function () {
-//   var dateInput = this.value;
-//   var dateError = document.getElementById('dateError');
-
-//   // Menggunakan regular expression untuk memeriksa apakah input hanya berisi angka
-//   if (!/^[0-9]+$/.test(dateInput)) {
-//       dateError.textContent = 'Hanya angka yang diperbolehkan';
-//   } else {
-//       dateError.textContent = ''; // Hapus pesan kesalahan jika input valid
-//   }
-// });
-// // validasi kota tidak boleh sama
-// function validateForm() {
-//   var x = document.forms["myForm"]["kota_asal"].value;
-//   var y = document.forms["myForm"]["kota_tujuan"].value;
-//   if (x == y) {
-//     alert("Kota asal dan kota tujuan tidak boleh sama");
-//     return false;
-//   }
-// }
