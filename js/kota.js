@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://be-2-bandung-6-production.up.railway.app";
+const API_BASE_URL = 'https://be-2-bandung-6-production.up.railway.app';
 
 document.addEventListener('DOMContentLoaded', async () => {
   if (window.location.pathname.includes('city.html')) {
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 async function fetchAllKota() {
   try {
-    const response = await fetch(`${API_BASE_URL}/kota/api/getkota`);
+    const response = await fetch(`${API_BASE_URL}/kota/api/getkota`, { mode: 'no-cors' });
     const data = await response.json();
 
     const kotaContainer = document.getElementById('kota-container');
