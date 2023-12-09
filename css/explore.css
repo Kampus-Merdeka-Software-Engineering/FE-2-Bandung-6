@@ -52,17 +52,24 @@ body {
 }
 /* FLEX JADWAL 2 */
 .flex-jadwal-2 {
+  display: flex;
+  justify-content: space-between;
   /* display: none; */
-  margin-left: 50px;
+  margin: 0 auto;
   box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
-  width: 1400px;
+  width: 80%;
   display: flex;
   margin-bottom: 40px;
 }
+.nama-tempat{
+  position: absolute;
+  left: 30;
+  
+}
 
-.flex-jadwal-2 > .barr {
+.flex-jadwal-2 > .barr,
+.flex-jadwal-2 > .nama-tempat {
   padding: 40px;
-  margin: 0px 0px 0px 450px;
   color: #000;
   font-size: 16px;
   height: 70px;
@@ -76,28 +83,30 @@ body {
   display: block;
   font-size: 14px;
   font-weight: 600;
-  margin-left: 10px;
-  margin-top: 5px;
+  
+  /* margin-left: 10px;
+  margin-top: 5px; */
 }
 .p2 {
   display: block;
   font-size: 14px;
   font-weight: 600;
-  margin-left: 10px;
-  margin-top: 5px;
+  /* margin-left: 10px;
+  margin-top: 5px;  */
 }
 .l1 {
   display: block;
   font-size: 12px;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: -30px;
+  /* margin-top: 20px;
+  margin-left: 10px; */
   color: #9a9ab0;
 }
 .l2 {
   display: block;
   font-size: 12px;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin-top: 60px;
+  /* margin-left: 10px; */
   color: #9a9ab0;
 }
 .p3 {
@@ -167,7 +176,17 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
+  .image{
+    margin-right: 100px;
+  }
   .flex-jadwal {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-jadwal-2 {
     width: auto;
     margin-left: 40px;
     margin-right: 40px;
