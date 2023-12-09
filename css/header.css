@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 a {
   text-decoration: none;
@@ -19,7 +19,7 @@ a {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
-.navbar .navbar-nav{
+.navbar .navbar-nav {
   display: flex;
   justify-content: end;
   margin-left: auto;
@@ -27,7 +27,7 @@ a {
 .navbar .nav-logo {
   margin-right: auto;
   align-items: center;
-  font-size: 30px; 
+  font-size: 30px;
 }
 .navbar .navbar-nav ul,
 .navbar .navbar-nav li {
@@ -51,7 +51,7 @@ nav .navbar-extra {
   text-decoration: none;
 }
 .navbar .navbar-nav,
-.navbar .navbar-extra{
+.navbar .navbar-extra {
   justify-content: end;
 }
 .navbar .navbar-nav li:hover a {
@@ -74,7 +74,7 @@ nav .navbar-extra {
 .show {
   display: block;
 }
-.material-icons-outlined{
+.material-icons-outlined {
   margin-right: 10px;
   color: #000;
 }
@@ -93,6 +93,7 @@ nav .navbar-extra {
     height: auto;
   }
   .navbar .nav-logo {
+    top: 0;
     left: 20px;
     position: absolute;
   }
@@ -100,13 +101,19 @@ nav .navbar-extra {
     margin-top: 70px;
   }
   .navbar .navbar-nav li {
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     justify-content: flex-end;
     width: 100%;
     flex-direction: column;
     margin-top: 0px;
     margin-left: auto;
   }
-  .navbar .navbar-nav{
+  .navbar .navbar-nav li:hover {
+    background-color: #fcdccf;
+
+  }
+  .navbar .navbar-nav {
     width: 100%; /* Pastikan lebar penuh pada layar kecil */
   }
   .menu-icon {
@@ -117,15 +124,14 @@ nav .navbar-extra {
     right: 0;
     margin: 1.4rem 5%;
   }
-  .navbar .navbar-nav ul{
+  .navbar .navbar-nav ul {
     display: none;
   }
-  .navbar .navbar-nav ul.show
-  {
+  .navbar .navbar-nav ul.show {
     display: flex;
     flex-direction: column;
   }
-  nav .navbar-nav{
+  nav .navbar-nav {
     transform: translateX(0); /* Mengembalikan posisi untuk tampilan menu-icon */
   }
   .navbar .navbar-nav li:hover a {
@@ -135,4 +141,3 @@ nav .navbar-extra {
     border-bottom: none;
   }
 }
-

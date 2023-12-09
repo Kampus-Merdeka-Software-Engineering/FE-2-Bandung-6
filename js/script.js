@@ -1,41 +1,3 @@
-// const API_BASE_URL = 'http://localhost:3001';
-
-// document.addEventListener('DOMContentLoaded', async () => {
-//   if (window.location.pathname.includes('city.html')) {
-//     await fetchAllKota('kota-container-1');
-//   }
-// });
-// async function fetchAllKota(containerId) {
-//   try {
-//     const response = await fetch(`${API_BASE_URL}/kota/api/getkota`);
-//     const data = await response.json();
-
-//     const kotaContainer = document.getElementById(containerId);
-
-//     data.forEach((kota) => {
-//       const kotaElement = document.createElement('div');
-//       kotaElement.classList.add('location');
-//       kotaElement.dataset.name = kota.kota_asal_travel;
-
-//       kotaElement.innerHTML = `
-//         <h2>${kota.kota_asal_travel}</h2>
-//         <img src="${kota.gambar_travel}" alt="profile" />
-//         <div class="address">
-//           <i class="material-icons"><img src="../image/icons/location_on.svg" alt="location" /></i>
-//           ${kota.alamat_travel}
-//         </div>
-//         <div class="telepon">
-//           <i class="material-icons"><img src="../image/icons/telepon.png" alt="telepon" /></i>
-//           <span>${kota.no_telepon_travel}</span>
-//         </div>
-//       `;
-
-//       kotaContainer.appendChild(kotaElement);
-//     });
-//   } catch (error) {
-//     console.error('Error fetching data:', error);
-//   }
-// }
 
 // Header
 function toggleMenu() {
@@ -139,27 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 document.addEventListener('DOMContentLoaded', function () {
   loadHeader();
-});
-document.addEventListener('DOMContentLoaded', function () {
-  const phoneInput = document.getElementById('phone');
-  let awalanDitambahkan = false;
-
-  // Tambahkan event listener untuk mendeteksi perubahan nilai pada input nomor telepon
-  phoneInput.addEventListener('input', function () {
-    if (!awalanDitambahkan) {
-      // Dapatkan nilai nomor telepon
-      const phoneNumber = phoneInput.value;
-
-      // Format nomor telepon dengan awalan +62
-      const formattedPhoneNumber = '+62' + phoneNumber;
-
-      // Atur nilai input nomor telepon
-      phoneInput.value = formattedPhoneNumber;
-
-      // Setel flag agar awalan hanya ditambahkan satu kali
-      awalanDitambahkan = true;
-    }
-  });
 });
 //Dropdown detail_penumpang
 function setupDropdowns() {
@@ -284,32 +225,32 @@ function startSlideshow() {
 }
 //modal
 function openModal() {
-  var modal = document.getElementById('modal');
+  let modal = document.getElementById('modal');
   modal.style.display = 'block';
 }
 
 // Fungsi untuk menutup modal
 function closeModal() {
-  var modal = document.getElementById('modal');
+  let modal = document.getElementById('modal');
   modal.style.display = 'none';
 }
 
 window.onload = function () {
-  var registerButtons = document.querySelectorAll('.button-link-schedule');
+  let registerButtons = document.querySelectorAll('.button-link-schedule');
   registerButtons.forEach(function (button) {
     button.addEventListener('click', function () {
       openModal();
     });
   });
 
-  var closeButton = document.querySelector('.close');
+  let closeButton = document.querySelector('.close');
   closeButton.addEventListener('click', function () {
     closeModal();
   });
 };
 // Modal index
 function openModal() {
-  var modal = document.getElementById('modal');
+  let modal = document.getElementById('modal');
   modal.style.display = 'block';
 }
 // Panggil fungsi ini untuk memulai slideshow
@@ -352,8 +293,8 @@ function showLoading(event, button) {
 }
 // validasi number
 document.getElementById('phone').addEventListener('input', function () {
-  var phoneInput = this.value;
-  var phoneError = document.getElementById('phoneError');
+  let phoneInput = this.value;
+  let phoneError = document.getElementById('phoneError');
 
   // Menggunakan regular expression untuk memeriksa apakah input hanya berisi angka
   if (!/^[0-9]+$/.test(phoneInput)) {

@@ -1,7 +1,7 @@
 function hideSelectedOption(selectedValue, dropdownId) {
-  var dropdownOptions = document.getElementById(dropdownId).options;
+  let dropdownOptions = document.getElementById(dropdownId).options;
 
-  for (var i = 0; i < dropdownOptions.length; i++) {
+  for (let i = 0; i < dropdownOptions.length; i++) {
     if (dropdownOptions[i].value === selectedValue) {
       dropdownOptions[i].style.display = "none";
     } else {
@@ -12,21 +12,21 @@ function hideSelectedOption(selectedValue, dropdownId) {
 
 // Listener for "Asal" dropdown
 document.getElementById("asal").addEventListener("change", function () {
-  var selectedAsal = this.value;
+  let selectedAsal = this.value;
   hideSelectedOption(selectedAsal, "tujuan");
 });
 
 // Listener for "Tujuan" dropdown
 document.getElementById("tujuan").addEventListener("change", function () {
-  var selectedTujuan = this.value;
+  let selectedTujuan = this.value;
   hideSelectedOption(selectedTujuan, "asal");
 });
 
 document
   .getElementById("tanggalBerangkat")
   .addEventListener("input", function () {
-    var selectedDate = new Date(this.value);
-    var currentDate = new Date();
+    let selectedDate = new Date(this.value);
+    let currentDate = new Date();
 
     if (selectedDate < currentDate) {
       // alert("Tidak dapat berjalan di masa lalu.");

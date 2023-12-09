@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=He, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Header</title>
+    <title>Explore</title>
     <link rel="stylesheet" type="text/css" href="../css/explore.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 
@@ -73,39 +73,21 @@
       </div>
       <div class="bar">
         <div class="button-explore">
-          <a href="" class="explore">Jelajah</a>
+          <a href="javascript:void(0);" class="explore" onclick="exploreButtonClick()">Jelajah</a>
         </div>
       </div>
     </div>
     <!-- Akhir Flex Dropdown -->
 
-    <div class="flex-jadwal-2">
-      <div class="image">
-        <img src="../image/icons/rute.png" alt="" />
-      </div>
-      <div class="nama-tempat">
-        <label for="" class="l1">Titik Awal</label>
-        <p class="p1">Bandung</p>
-        <label for="" class="l2">Titik Akhir</label>
-        <p class="p2">Jepara</p>
-      </div>
-      <div class="barr">
-        <p class="p3">08.00 WIB</p>
-        <p class="p4">21-22-22</p>
-      </div>
-      <div class="barr">
-        <p class="p5">8 Kursi</p>
-        <p class="p6">Rp.360.000</p>
-        <a href="" class="buy-button">Beli Sekarang</a>
-      </div>
-    </div>
-
+    <div id="flex-container" class="hidden"></div>
 
     <!-- Footer -->
     <div id="foot-placeholder"></div>
     <!-- Akhir Footer -->
 
     <!-- Link JavaScript -->
+    <script src="../js/explore.js"></script>
+    <script src="../js/i_explore.js"></script>
     <script src="../js/script.js"></script>
     <!-- Akhir Link Javascript -->
   </body>
