@@ -32,7 +32,7 @@ function initializeFlatpickr() {
   });
 }
 function validateInput() {
-  var jumlahInput = document.getElementById('tiket').value;
+  const jumlahInput = document.getElementById('tiket').value;
 
   // Periksa apakah nilai kurang dari 1
   if (jumlahInput < 1) {
