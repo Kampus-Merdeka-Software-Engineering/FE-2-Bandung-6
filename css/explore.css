@@ -27,7 +27,7 @@ body {
   height: 30px;
 }
 .hidden {
-  display: none !important;
+  display: none;
 }
 .bar p {
   margin-top: 5px;
@@ -59,9 +59,7 @@ body {
   display: flex;
   margin-bottom: 40px;
 }
-.flex-jadwal-2.hidden {
-  display: none;
-}
+
 .flex-jadwal-2 > .barr {
   padding: 40px;
   margin: 0px 0px 0px 450px;
