@@ -209,8 +209,8 @@ body {
 }
 .destination-card {
   display: grid;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   flex-direction: column;
   gap: 10px;
   border-radius: 12px;
