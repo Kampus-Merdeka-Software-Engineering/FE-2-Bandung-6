@@ -50,12 +50,7 @@ function submitForm() {
     },
     body: JSON.stringify(formData),
   })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Gagal menyimpan data. Terjadi kesalahan pada server.');
-      }
-      return response.json();
-    })
+    .then((response) => response.json())
     .then((data) => {
       console.log('Data berhasil disimpan:', data);
       alert('Berhasil');
