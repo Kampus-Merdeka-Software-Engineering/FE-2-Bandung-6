@@ -10,7 +10,7 @@ body {
 
 /* dropdown */
 .flex-jadwal {
-  margin-top: 150px;
+  margin-top: 235px;
   box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
   margin-left: 250px;
   margin-right: 250px;
@@ -54,11 +54,15 @@ body {
 }
 /* FLEX JADWAL 2 */
 .flex-jadwal-2 {
+  /* display: none; */
   margin-left: 50px;
   box-shadow: 0 2px 4px 0 rgba(0.2, 0.2, 0.2, 0.2);
   width: 1400px;
   display: flex;
   margin-bottom: 40px;
+}
+.flex-jadwal-2.hidden {
+  display: none;
 }
 .flex-jadwal-2 > .barr {
   padding: 40px;
