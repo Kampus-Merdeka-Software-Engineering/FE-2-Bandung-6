@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 async function fetchAllKota() {
   try {
-    const response = await fetch(`${API_BASE_URL}/kota/api/getkota`, { mode: 'no-cors' });
+    const response = await fetch(`${API_BASE_URL}/kota/api/getkota`);
     const data = await response.json();
 
     const kotaContainer = document.getElementById('kota-container');
