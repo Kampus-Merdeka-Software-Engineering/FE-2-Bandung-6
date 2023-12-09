@@ -76,7 +76,8 @@
           </div>
           <div class="input-group">
             <label for="tiket">Total Tiket</label>
-            <input type="number" id="tiket" name="tiket" placeholder="Jumlah Tiket" required />
+            <input type="number" id="tiket" name="tiket" min="1" placeholder="Jumlah Tiket" oninput="validateInput()" required />
+            <p id="error-message" style="color: red;"></p>
           </div>
           <div class="input-group">
             <label for="date">Tanggal</label>

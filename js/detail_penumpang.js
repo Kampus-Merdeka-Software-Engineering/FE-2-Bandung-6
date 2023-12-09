@@ -31,3 +31,13 @@ function initializeFlatpickr() {
     },
   });
 }
+function validateInput() {
+  var jumlahInput = document.getElementById('tiket').value;
+
+  // Periksa apakah nilai kurang dari 1
+  if (jumlahInput < 1) {
+    document.getElementById('error-message').textContent = 'Tiket tidak boleh kurang dari 1';
+  } else {
+    document.getElementById('error-message').textContent = '';
+  }
+}
