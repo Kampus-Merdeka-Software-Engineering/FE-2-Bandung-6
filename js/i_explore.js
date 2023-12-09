@@ -1,4 +1,5 @@
 const API_BASE_URL = 'https://be-2-bandung-6-production.up.railway.app';
+let alertShown = false;
 
 // document.addEventListener('DOMContentLoaded', async () => {
 //   if (window.location.pathname.includes('explore.html')) {
@@ -79,6 +80,10 @@ async function getByFilterFromFlexJadwal1(kotaAsal, kotaTujuan, tanggalKeberangk
   } catch (error) {
     console.error('Terjadi kesalahan saat mencari data:', error);
     // Handle error, misalnya tampilkan pesan kesalahan kepada pengguna
+    if (!alertShown) {
+      alert('Tidak ada hasil ditemukan.');
+      alertShown = true;
+    }
   }
 }
 
@@ -114,7 +119,7 @@ function displaySearchResults(data) {
           <div class="barr">
             <p class="p5">${layananData.batas_tiket} Kursi</p>
             <p class="p6">Rp.${layananData.harga_tiket}</p>
-            <a href="../html/detail_penumpang.html" class="buy-button">Beli Sekarang</a>
+            <a href="#" class="buy-button" onclick="handleBeliButtonClick('${layananData.kota_asal}')">Beli Sekarang</a>
           </div>    
         `;
 
@@ -122,4 +127,11 @@ function displaySearchResults(data) {
     flexJadwalContainer.appendChild(flexJadwalElement);
   });
   flexJadwalContainer.classList.remove('hidden');
+}
+function handleBeliButtonClick(kotaAsal) {
+  // Simpan nilai kotaAsal ke dalam sessionStorage atau localStorage
+  sessionStorage.setItem('selectedKotaAsal', kotaAsal);
+
+  // Navigasi ke halaman data.html
+  window.location.href = 'cth.html';
 }
