@@ -114,7 +114,7 @@ function displaySearchResults(data) {
           <div class="barr">
             <p class="p5">${layananData.batas_tiket} Kursi</p>
             <p class="p6">Rp.${layananData.harga_tiket}</p>
-            <a href="" class="buy-button">Beli Sekarang</a>
+            <a href="../html/detail_penumpang.html" class="buy-button">Beli Sekarang</a>
           </div>    
         `;
 
