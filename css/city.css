@@ -137,3 +137,12 @@ body {
 .button-link-schedule:hover {
   background-color: #555;
 }
+
+@media screen and (max-width: 768px) {
+  .container .location-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Tiga kolom besar */
+    gap: 20px; /* Jarak antara kolom dan baris */
+  }
+
+}
