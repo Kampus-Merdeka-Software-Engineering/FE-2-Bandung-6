@@ -19,7 +19,7 @@ async function fetchAllKota() {
 
       kotaElement.innerHTML = `
         <h2>${kota.kota_asal_travel}</h2>
-        <img src="${kota.gambar_travel}" alt="profile" />
+        <img src="${kota.gambar_travel}" alt="profile-travel" />
         <div class="address">
           <i class="material-icons"><img src="../image/icons/location_on.svg" alt="location" /></i>
           ${kota.alamat_travel}
