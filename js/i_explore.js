@@ -133,5 +133,5 @@ function handleBeliButtonClick(kotaAsal) {
   sessionStorage.setItem('selectedKotaAsal', kotaAsal);
 
   // Navigasi ke halaman data.html
-  window.location.href = 'cth.html';
+  window.location.href = 'detail_penumpang.html';
 }
