@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://be-2-bandung-6-production.up.railway.app';
 document.addEventListener('DOMContentLoaded', () => {
   // Ambil nilai ID data penumpang dari URL
   const queryParams = new URLSearchParams(window.location.search);
@@ -94,3 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Tampilkan nilai alamatEmail pada elemen <p>
 });
+
