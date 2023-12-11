@@ -18,6 +18,10 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #ffbea9;
+
+}
+.file-upload-label span{
+color: black;
 }
 input[type='file'] {
   display: none;
