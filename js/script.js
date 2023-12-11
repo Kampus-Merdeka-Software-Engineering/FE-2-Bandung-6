@@ -177,7 +177,6 @@ function setupSlides() {
     setTimeout(showSlides, 2000);
   }
 }
-
 // Panggil fungsi setupSlides pada saat dokumen telah dimuat
 document.addEventListener('DOMContentLoaded', function () {
   setupSlides();
