@@ -241,7 +241,7 @@ input:checked + label::before {
   justify-content: center;
   margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 40%;
   font-weight: 700;
   font-size: 16px;
   margin-top: 20px;
@@ -251,12 +251,10 @@ input:checked + label::before {
   background-color: #ed5c01;
   color: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
 }
 .submit-btn:hover {
   background-color: #827d7d;
   color: black;
-
 }
 #popup-text {
   margin-top: -1px;
@@ -277,8 +275,11 @@ input:checked + label::before {
   text-align: center;
   font-size: 20px;
 }
+.button {
+  display: flex;
+}
 
-#next-button{
+#next-button {
   padding: 10px;
   background-color: #ed5c01;
   color: #fff;
@@ -312,7 +313,26 @@ input:checked + label::before {
     transform: scale(1);
   }
 }
+/* Gaya untuk tombol dinonaktifkan */
+#pesanSekarangBtn[disabled] {
+  background-color: #ccc; /* Warna latar belakang abu-abu */
+  color: #666; /* Warna teks abu-abu yang sesuai */
+  cursor: not-allowed; /* Ganti kursor saat tombol dinonaktifkan */
+}
+#simpanSekarang[disabled] {
+  background-color: #ccc; /* Warna latar belakang abu-abu */
+  color: #666; /* Warna teks abu-abu yang sesuai */
+  cursor: not-allowed; /* Ganti kursor saat tombol dinonaktifkan */
+}
 
+/* Gaya untuk input dinonaktifkan */
+
+
+/* Gaya saat kursor berada di atas tombol */
+#pesanSekarangBtn:hover {
+  background-color: #555; /* Warna latar belakang saat tombol dihover */
+  color: #fff; /* Warna teks saat tombol dihover */
+}
 /* Sesuaikan gaya sesuai kebutuhan */
 
 /* Gaya untuk ikon centang */
