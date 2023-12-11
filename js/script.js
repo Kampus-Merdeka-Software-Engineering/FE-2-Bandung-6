@@ -272,7 +272,7 @@ function setupFileUpload() {
   // Menambahkan event listener untuk mengupdate label setelah berkas diunggah
   fileUploadInput.addEventListener('change', function () {
     const fileName = fileUploadInput.files[0].name;
-    fileUploadText.innerHTML = `Bukti Pembayaran: ${fileName}`;
+    fileUploadText.innerHTML = `${fileName}`;
   });
 }
 // Export fungsi setupFileUpload agar bisa dipanggil dari luar
