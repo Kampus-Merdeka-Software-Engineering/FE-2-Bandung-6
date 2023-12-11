@@ -15,29 +15,12 @@
     <!-- Akhir Header -->
     <div class="content-1">
       <div class="container-pembayaran">
-        <div class="container-kiri" id="cont-atas">
-          
-        </div>
+        <div class="container-kiri" id="cont-atas"></div>
         <div class="container-kanan">
           <div class="payment-method">
             <div class="detail-heading">
               <h4>Detail Pembayaran</h4>
             </div>
-            <!-- <label for="paymentMethod">Metode Pembayaran</label>
-            <select id="paymentMethod" required>
-              <option selected value="">Pilih metode pembayaran</option>
-              <option value="BCA">BCA (No. Rekening: 3882247001 a.n Veri Hakim)</option>
-              <option value="BRI">BRI (No. Rekening: 5118077200520001 a.n Veri Hakim)</option>
-              <option value="BNI">BNI (No. Rekening: 0552470412 a.n Veri Hakim)</option>
-              <option value="Dana">Dana (088765543212)</option>
-              <option value="Shopeepay">Shopeepay (088765543212)</option>
-              <option value="Gopay">Gopay (088765543212)</option>
-            </select>
-            <div class="input-group">
-              <label for="phone">No Telepon</label>
-              <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon anda..." required />
-              <small id="phoneError" style="color: red"></small>
-            </div> -->
             <div class="upload-section">
               <label for="file-upload" class="file-upload-label">
                   <a href="https://wa.me/6285725447454?text=Halo%2C%20saya%20mengunggah%20bukti%20pembayaran">
@@ -48,12 +31,13 @@
           </div>
           </div>
           <div class="terms"></div>
-          <button type="button" id="openPopup" onclick="showLoading(event, this)">Bayar</button>
+          <button type="button" id="openPopup" onclick="pembayaranBtn()">Bayar</button>
         </div>
       </div>
     </div>
 
     <!-- Footer -->
+    <div id="foot-placeholder"></div>
 
     <!-- Akhir Footer -->
     <script src="../js/i_pembayaran.js"></script>
@@ -61,6 +45,5 @@
     <script>
       window.setupFileUpload();
     </script>
-    <div id="foot-placeholder"></div>
   </body>
 </html>
