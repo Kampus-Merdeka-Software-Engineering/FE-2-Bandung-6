@@ -155,6 +155,7 @@ body {
   gap: 16px;
 }
 .alamat-text {
+  font-size: 18px;
   margin-left: 10px;
 }
 
@@ -178,11 +179,13 @@ body {
 .destination-img img{
   padding: 5px;
 }
+.btn-destination a{
+  color: black;
+}
 
 .btn-destination {
   cursor: pointer;
   display: flex;
-  float: left;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
