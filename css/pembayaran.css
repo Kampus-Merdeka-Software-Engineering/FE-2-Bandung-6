@@ -217,6 +217,33 @@ select#paymentMethod {
   display: flex;
   justify-content: center;
 }
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input-group label {
+  margin-bottom: 5px;
+}
+.input-group2 input {
+  height: 20px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2mm;
+}
+.input-group input {
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2mm;
+}
 
 /* Responsive */
 @media (max-width: 600px) {

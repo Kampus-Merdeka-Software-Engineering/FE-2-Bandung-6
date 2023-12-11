@@ -33,24 +33,17 @@
               <option value="Shopeepay">Shopeepay (088765543212)</option>
               <option value="Gopay">Gopay (088765543212)</option>
             </select>
+            <div class="input-group">
+              <label for="phone">No Telepon</label>
+              <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon anda..." required />
+              <small id="phoneError" style="color: red"></small>
+            </div>
             <div class="upload-section">
               <label for="file-upload" class="file-upload-label">
                 <span id="file-upload-text">Unggah Bukti Pembayaran</span>
                 <input type="file" id="file-upload" required />
               </label>
             </div>
-          </div>
-          <div class="payment-summary">
-            <h3>Detail harga</h3>
-            <p>Jumlah Tiket: <span id="ticket-amount">2</span></p>
-            <p>Harga Tiket: Rp<span id="ticket-price">Rp 360.000,00</span></p>
-            <p>Total Bayar: Rp<span id="total-payment">Rp 360.000,00</span></p>
-          </div>
-          <div class="terms">
-            <label>
-              <input type="checkbox" id="agree-terms" name="agree-terms" />
-              Saya menyetujui syarat dan ketentuan.
-            </label>
           </div>
           <div class="terms"></div>
           <button type="button" id="openPopup" onclick="showLoading(event, this)">Bayar</button>
