@@ -21,12 +21,8 @@
     <div class="container">
       <div class="contact-details">
         <div class="detail-heading"><h3>Detail Travel</h3></div>
-        <div class="detail-destination" id="detail-kota">
-
-        </div>
-        <div class="container-kanan" id="detail-layanan">
-          
-        </div>
+        <div class="detail-destination" id="detail-kota"></div>
+        <div class="container-kanan" id="detail-layanan"></div>
       </div>
       <div class="contact-details">
         <div class="detail-heading">
@@ -53,7 +49,7 @@
           <div class="input-group">
             <label for="tiket">Total Tiket</label>
             <input type="number" id="tiket" name="tiket" min="1" placeholder="Jumlah Tiket" oninput="validateInput()" required />
-            <p id="error-message" style="color: red;"></p>
+            <p id="error-message" style="color: red"></p>
           </div>
           <div class="input-group">
             <label for="date">Tanggal</label>
@@ -65,7 +61,8 @@
             <input type="text" id="ket" name="keterangan" placeholder="Keterangan" />
           </div>
           <div class="button">
-            <button class="submit-btn" onclick="submitForm()">Pesan Sekarang</button>
+            <button class="submit-btn" onclick="submitForm()">Simpan</button>
+            <button id="pesanSekarangBtn" class="submit-btn" disabled onclick="pesanSekarang()">Pesan Sekarang</button>
           </div>
         </form>
       </div>
@@ -78,9 +75,8 @@
 
     <!-- Link JS -->
     <script src="../js/script.js"></script>
-    <script src="../js/cth.js"></script>
     <script src="../js/detail_penumpang.js"></script>
-    <script src="../js/data_penumpang.js"></script>
+    <script src="../js/i_data_penumpang.js"></script>
     <!-- Batas -->
   </body>
 </html>
