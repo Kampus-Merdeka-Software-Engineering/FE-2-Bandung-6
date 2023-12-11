@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <input type="textarea" id="address" name="address" placeholder="${kotaData.kota_tujuan}" readonly />
         </div>
           <div class="input-group">
-            <label for="price">Harga</label>
+            <label for="price">Harga Per Tiket</label>
             <input type="text" id="price" name="price" placeholder="Rp ${kotaData.harga_tiket}" readonly />
           </div>
           <div class="input-group">

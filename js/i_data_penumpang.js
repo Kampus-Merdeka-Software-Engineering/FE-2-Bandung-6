@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://be-2-bandung-6-production.up.railway.app';
 let formSubmitted = false;
 
 document.addEventListener('DOMContentLoaded', () => {
